@@ -4,7 +4,8 @@
   "description": "Better translations for SCP: Secret Laboratory.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate-updated-translations": "node distrib/scripts/generate-updated-translations.js",
+    "clear-output": "node distrib/scripts/clear-output.js"
   },
   "keywords": [
     "scp",

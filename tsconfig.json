@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
         "rootDir": "src",
-        "outDir": "distrib"
+        "outDir": "distrib",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     }
 }

@@ -1,9 +1,16 @@
-import {cpSync, mkdirSync} from "fs";
+import { translationsFolderPath } from "../constants";
+import { clearOutputDirectory } from "../utility/clear-output-directory";
+import { copyTranslationFolder } from "../utility/copy-translation-folder";
+import { renameLanguageDirectories } from "../utility/rename-directories";
+import { updateItemTranslations } from "../utility/update-item-translations";
+import { updateLanguageManifests } from "../utility/update-language-manifests";
 
-const translationsOutputPath = "out/Translations";
+clearOutputDirectory();
 
-mkdirSync(translationsOutputPath);
+copyTranslationFolder(translationsFolderPath);
 
-const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/Translations";
+updateItemTranslations();
 
-cpSync(translationsFolderPath, translationsOutputPath, {recursive: true});
+updateLanguageManifests();
+
+renameLanguageDirectories();

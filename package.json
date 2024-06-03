@@ -1,0 +1,26 @@
+{
+  "name": "scp-secret-laboratory-translations",
+  "version": "1.0.0",
+  "description": "Better translations for SCP: Secret Laboratory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scp",
+    "secret",
+    "lab",
+    "laboratory",
+    "sl",
+    "scpsl",
+    "secure",
+    "contain",
+    "protect",
+    "special",
+    "containment",
+    "procedures",
+    "translations"
+  ],
+  "author": "Slqmy",
+  "license": "ISC"
+}

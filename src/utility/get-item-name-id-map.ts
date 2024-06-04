@@ -1,10 +1,10 @@
 import { readFileSync } from "fs";
-import { translationsFolderPath } from "../constants";
+import { itemsFilePath, translationsFolderPath } from "../constants.js";
 
 export function getItemNameIdMap() {
-    const itemsFilePath = translationsFolderPath + "/en/Items.txt";
+    const itemsFileFullPath = translationsFolderPath + "/en/" + itemsFilePath;
 
-    const fileContents = readFileSync(itemsFilePath).toString();
+    const fileContents = readFileSync(itemsFileFullPath).toString();
 
     const itemIdMap = new Map<number, string>();
 

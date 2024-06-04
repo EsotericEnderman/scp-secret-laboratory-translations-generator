@@ -4,6 +4,9 @@
         "outDir": "distrib",
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "lib": ["ES2022"]
+        "lib": ["ES2022"],
+        "target": "ES2022",
+        "moduleResolution": "Node",
+        "module": "ESNext"
     }
 }

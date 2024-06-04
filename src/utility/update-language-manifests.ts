@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { loopTranslationLanguages as loopTranslationLanguageFolders } from "./loop-translation-languages";
+import { loopTranslationLanguages as loopTranslationLanguageFolders } from "./loop-translation-languages.js";
 
 export function updateLanguageManifests() {
     loopTranslationLanguageFolders((folderPath) => {

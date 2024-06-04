@@ -1,5 +1,5 @@
 import {cpSync, mkdirSync} from "fs";
-import { translationsOutputPath } from "../constants";
+import { translationsOutputPath } from "../constants.js";
 
 export function copyTranslationFolder(translationsFolderPath: string) {
     mkdirSync(translationsOutputPath);

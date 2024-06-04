@@ -1,7 +1,8 @@
-import scp914RecipesData from "../../data/scp-914-recipes.json";
-import { SCP914MultipleRecipeOutputList, SCP914RecipeOutput, SCP914Recipes, isSCP914ActionRecipeOutput, isSCP914ChanceRecipeOutput, isSCP914Item, isSCP914ItemCountRecipeOutput, isSCP914ItemRecipeOutput } from "../types";
+import scp914RecipesData from "../../data/scp-914-recipes.json" with { type: "json" };
+import { SCP914MultipleRecipeOutputList, SCP914RecipeOutput, SCP914Recipes, isSCP914ActionRecipeOutput, isSCP914ChanceRecipeOutput, isSCP914Item, isSCP914ItemCountRecipeOutput, isSCP914ItemRecipeOutput } from "../types.js";
+import { getItemTranslation } from "./get-item-translation.js";
 
-export function recipeToString(itemName: string) {
+export function recipeToString(itemName: string, languageFolderName: string) {
     let output = "";
 
     const recipes = scp914RecipesData as SCP914Recipes;
@@ -22,9 +23,9 @@ export function recipeToString(itemName: string) {
         }
 
         if (Array.isArray(recipeOutput)) {
-            settingOutput += handleMultipleScp914Outputs(recipeOutput);
+            settingOutput += handleMultipleScp914Outputs(recipeOutput, languageFolderName);
         } else {
-            settingOutput += handleSingle914Output(recipeOutput);
+            settingOutput += handleSingle914Output(recipeOutput, languageFolderName);
         }
 
         output += "\\n<color=yellow>" + scp914Setting + "</color> - " + settingOutput;
@@ -33,14 +34,14 @@ export function recipeToString(itemName: string) {
     return output;
 }
 
-function handleMultipleScp914Outputs(recipeOutput: SCP914MultipleRecipeOutputList) {
+function handleMultipleScp914Outputs(recipeOutput: SCP914MultipleRecipeOutputList, languageFolderName: string) {
     let output = "";
     
     for (const element of recipeOutput) {
         if (Array.isArray(element)) {
-            output += handleMultipleScp914Outputs(element);
+            output += handleMultipleScp914Outputs(element, languageFolderName);
         } else {
-            output += handleSingle914Output(element);
+            output += handleSingle914Output(element, languageFolderName);
         }
 
         output += ", ";
@@ -55,21 +56,21 @@ function handleMultipleScp914Outputs(recipeOutput: SCP914MultipleRecipeOutputLis
     return output;
 }
 
-function handleSingle914Output(recipeOutput: Exclude<SCP914RecipeOutput, SCP914MultipleRecipeOutputList>) {
+function handleSingle914Output(recipeOutput: Exclude<SCP914RecipeOutput, SCP914MultipleRecipeOutputList>, languageFolderName: string) {
     let output = "";
 
     if (isSCP914Item(recipeOutput)) {
-        output = recipeOutput;
+        output = getItemTranslation(recipeOutput, languageFolderName);
     } else if (isSCP914ItemRecipeOutput(recipeOutput)) {
         if (isSCP914ItemCountRecipeOutput(recipeOutput)) {
             output = recipeOutput.Count + "x ";
         }
 
-        output += recipeOutput.Item;
+        output += getItemTranslation(recipeOutput.Item, languageFolderName);
     } else if (isSCP914ActionRecipeOutput(recipeOutput)) {
         output = recipeOutput.Action;
     } else {
-        output = handleMultipleScp914Outputs(recipeOutput.Outputs);
+        output = handleMultipleScp914Outputs(recipeOutput.Outputs, languageFolderName);
     }
 
     if (isSCP914ChanceRecipeOutput(recipeOutput)) {

@@ -1,14 +1,17 @@
 import { readFileSync, writeFileSync } from "fs";
-import { loopTranslationLanguages } from "./loop-translation-languages";
-import { getItemNameIdMap } from "./get-item-name-id-map";
-import scp914Recipes from "../../data/scp-914-recipes.json";
-import { recipeToString } from "./recipe-to-string";
+import { loopTranslationLanguages } from "./loop-translation-languages.js";
+import { getItemNameIdMap } from "./get-item-name-id-map.js";
+import { recipeToString } from "./recipe-to-string.js";
+import { itemsFilePath } from "../constants.js";
 
 export function updateItemTranslations() {
     loopTranslationLanguages((folderPath) => {
-        const itemsFilePath = folderPath + "/Items.txt";
+        const split = folderPath.split("/");
+        const languageFolderName = split[split.length - 1];
 
-        const itemsFile = readFileSync(itemsFilePath).toString();
+        const itemsFileFullPath = folderPath + itemsFilePath;
+
+        const itemsFile = readFileSync(itemsFileFullPath).toString();
 
         const map = getItemNameIdMap();
 
@@ -19,13 +22,13 @@ export function updateItemTranslations() {
             const itemId = line.match(/\d+/)[0];
             let itemName = map.get(parseInt(itemId));
 
-            const string = recipeToString(itemName);
+            const string = recipeToString(itemName, languageFolderName);
 
             if (string) {
-                lines[i] += recipeToString(itemName);
+                lines[i] += string;
             }
         }
 
-        writeFileSync(itemsFilePath, lines.join("\r\n"));
+        writeFileSync(itemsFileFullPath, lines.join("\r\n"));
     })
 }

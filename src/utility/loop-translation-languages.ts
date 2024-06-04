@@ -1,5 +1,5 @@
 import { readdirSync } from "fs";
-import { translationsOutputPath } from "../constants";
+import { translationsOutputPath } from "../constants.js";
 
 export function loopTranslationLanguages(callback: (folderPath: string) => void) {
     const translationlanguageFolders = readdirSync(translationsOutputPath);

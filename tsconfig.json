@@ -3,6 +3,7 @@
         "rootDir": "src",
         "outDir": "distrib",
         "resolveJsonModule": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "lib": ["ES2022"]
     }
 }

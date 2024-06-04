@@ -4,5 +4,5 @@ import { translationsOutputPath } from "../constants";
 export function copyTranslationFolder(translationsFolderPath: string) {
     mkdirSync(translationsOutputPath);
 
-    cpSync(translationsFolderPath, translationsOutputPath, {recursive: true});
+    cpSync(translationsFolderPath, translationsOutputPath, {recursive: true, filter: (source) => !source.endsWith("-updated")});
 }

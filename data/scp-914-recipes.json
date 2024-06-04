@@ -171,7 +171,7 @@
         "1:1": "Facility Manager Keycard",
         "Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.5
             },
             {
@@ -181,7 +181,7 @@
         ],
         "Very Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.6666667
             },
             {
@@ -210,7 +210,7 @@
                 "Chance": 0.333333343
             },
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.333333343
             },
             {
@@ -223,10 +223,10 @@
         "Rough": "Guard Keycard",
         "Coarse": "MTF Operative Keycard",
         "1:1": "Chaos Insurgency Access Device",
-        "Fine": "O5-Level Keycard",
+        "Fine": "O5-level Keycard",
         "Very Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.75
             },
             {
@@ -239,10 +239,10 @@
         "Rough": "Zone Manager Keycard",
         "Coarse": "MTF Captain Keycard",
         "1:1": "Chaos Insurgency Access Device",
-        "Fine": "O5-Level Keycard",
+        "Fine": "O5-level Keycard",
         "Very Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.75
             },
             {
@@ -255,10 +255,10 @@
         "Rough": "Guard Keycard",
         "Coarse": "MTF Operative Keycard",
         "1:1": "MTF Captain Keycard",
-        "Fine": "O5-Level Keycard",
+        "Fine": "O5-level Keycard",
         "Very Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.75
             },
             {
@@ -267,7 +267,7 @@
             }
         ]
     },
-    "O5-Level Keycard": {
+    "O5-level Keycard": {
         "Rough": "Guard Keycard",
         "Coarse": [
             {
@@ -279,10 +279,10 @@
                 "Chance": 0.5
             }
         ],
-        "1:1": "O5-Level Keycard",
+        "1:1": "O5-level Keycard",
         "Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.5
             },
             {
@@ -292,7 +292,7 @@
         ],
         "Very Fine": [
             {
-                "Item": "O5-Level Keycard",
+                "Item": "O5-level Keycard",
                 "Chance": 0.25
             },
             {
@@ -324,23 +324,21 @@
     "COM-15": {
         "Rough": [
             {
-                "Output": {
-                    "Action": "Destroys the Item"
-                },
+                "Action": "Destroys the Item",
                 "Chance": 0.5
             },
             {
-                "Output": "9x19mm Ammo",
+                "Item": "9x19mm Ammo",
                 "Chance": 0.5
             }
         ],
         "Coarse": [
             {
-                "Output": "COM-15",
+                "Item": "COM-15",
                 "Chance": 0.5
             },
             {
-                "Output": "9x19mm Ammo",
+                "Item": "9x19mm Ammo",
                 "Chance": 0.5
             }
         ],
@@ -350,29 +348,29 @@
         "Fine": "COM-18",
         "Very Fine": [
             {
-                "Output": ".44 Revolver",
+                "Item": ".44 Revolver",
                 "Chance": 0.295
             },
             {
-                "Output": "FSP-9",
+                "Item": "FSP-9",
                 "Chance": 0.555
             },
             {
-                "Output": "COM-45",
+                "Item": "COM-45",
                 "Chance": 0.15
             }
         ]
     },
-    "First-Aid Kit": {
+    "First Aid Kit": {
         "Rough": {
             "Action": "Destroys the Item"
         },
         "Coarse": "Painkillers",
-        "1:1": "First-Aid Kit",
+        "1:1": "First Aid Kit",
         "Fine": "Adrenaline",
         "Very Fine": [
             {
-                "Item": "First-Aid Kit",
+                "Item": "First Aid Kit",
                 "Chance": 0.333333343
             },
             {
@@ -403,7 +401,7 @@
         "Fine": "Radio",
         "Very Fine": [
             {
-                "Item": "Flashbang",
+                "Item": "Flashbang Grenade",
                 "Chance": 0.9
             },
             {
@@ -419,11 +417,11 @@
         },
         "Very Fine": [
             {
-                "Output": "3-X Particle Disruptor",
+                "Item": "3-X Particle Disruptor",
                 "Chance": 0.5
             },
             {
-                "Output": "Jailbird",
+                "Item": "Jailbird",
                 "Chance": 0.5
             }
         ]
@@ -435,7 +433,7 @@
                 "Chance": 0.5
             },
             {
-                "Item": "First-Aid Kit",
+                "Item": "First Aid Kit",
                 "Chance": 0.5
             }
         ],
@@ -473,14 +471,12 @@
     "MTF-E11-SR": {
         "Rough": [
             {
-                "Output": "COM-15",
+                "Item": "COM-15",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "5.56x45mm Ammo",
-                    "Count": 2
-                },
+                "Item": "5.56x45mm Ammo",
+                "Count": 2,
                 "Chance": 0.5
             }
         ],
@@ -491,23 +487,23 @@
         "Fine": "FR-MG-0",
         "Very Fine": [
             {
-                "Output": "Micro H.I.D.",
+                "Item": "Micro H.I.D.",
                 "Chance": 0.05
             },
             {
-                "Output": "Logicer",
+                "Item": "Logicer",
                 "Chance": 0.25
             },
             {
-                "Output": "Shotgun",
+                "Item": "Shotgun",
                 "Chance": 0.1
             },
             {
-                "Output": "AK",
+                "Item": "AK",
                 "Chance": 0.3
             },
             {
-                "Output": "Crossvec",
+                "Item": "Crossvec",
                 "Chance": 0.3
             }
         ]
@@ -515,16 +511,12 @@
     "Crossvec": {
         "Rough": [
             {
-                "Output": {
-                    "Action": "Destroys the Item"
-                },
+                "Action": "Destroys the Item",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "9x19mm Ammo",
-                    "Count": 4
-                },
+                "Item": "9x19mm Ammo",
+                "Count": 4,
                 "Chance": 0.5
             }
         ],
@@ -534,21 +526,21 @@
         },
         "Fine": [
             {
-                "Output": "MTF-E11-SR",
+                "Item": "MTF-E11-SR",
                 "Chance": 0.6
             },
             {
-                "Output": "AK",
+                "Item": "AK",
                 "Chance": 0.4
             }
         ],
         "Very Fine": [
             {
-                "Output": "Shotgun",
+                "Item": "Shotgun",
                 "Chance": 0.3
             },
             {
-                "Output": "MTF-E11-SR",
+                "Item": "MTF-E11-SR",
                 "Chance": 0.7
             }
         ]
@@ -562,29 +554,23 @@
     "FSP-9": {
         "Rough": [
             {
-                "Output": {
-                    "Action": "Destroys the Item"
-                },
+                "Action": "Destroys the Item",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "9x19mm Ammo",
-                    "Count": 3
-                },
+                "Item": "9x19mm Ammo",
+                "Count": 3,
                 "Chance": 0.5
             }
         ],
         "Coarse": [
             {
-                "Output": "COM-18",
+                "Item": "COM-18",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "9x19mm Ammo",
-                    "Count": 2
-                },
+                "Item": "9x19mm Ammo",
+                "Count": 2,
                 "Chance": 0.5
             }
         ],
@@ -594,11 +580,11 @@
         "Fine": "Crossvec",
         "Very Fine": [
             {
-                "Output": "Crossvec",
+                "Item": "Crossvec",
                 "Chance": 0.7
             },
             {
-                "Output": "MTF-E11-SR",
+                "Item": "MTF-E11-SR",
                 "Chance": 0.3
             }
         ]
@@ -606,14 +592,12 @@
     "Logicer": {
         "Rough": [
             {
-                "Output": "AK",
+                "Item": "AK",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "7.62x39mm Ammo",
-                    "Count": 4
-                },
+                "Item": "7.62x39mm Ammo",
+                "Count": 4,
                 "Chance": 0.5
             }
         ],
@@ -624,7 +608,7 @@
         "Fine": "Shotgun",
         "Very Fine": [
             {
-                "Output": "Micro H.I.D.",
+                "Item": "Micro H.I.D.",
                 "Chance": 0.1
             },
             {
@@ -650,8 +634,8 @@
         "Rough": {
             "Action": "Destroys the Item"
         },
-        "Coarse": "Flashbang",
-        "1:1": "Flashbang",
+        "Coarse": "Flashbang Grenade",
+        "1:1": "Flashbang Grenade",
         "Fine": "High-Explosive Grenade",
         "Very Fine": [
             {
@@ -668,7 +652,7 @@
             }
         ]
     },
-    "Flashbang": {
+    "Flashbang Grenade": {
         "Rough": {
             "Action": "Destroys the Item"
         },
@@ -707,14 +691,12 @@
     "COM-18": {
         "Rough": [
             {
-                "Output": "9x19mm Ammo",
+                "Item": "9x19mm Ammo",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "9x19mm Ammo",
-                    "Count": 2
-                },
+                "Item": "9x19mm Ammo",
+                "Count": 2,
                 "Chance": 0.5
             }
         ],
@@ -725,18 +707,18 @@
         "Fine": "FSP-9",
         "Very Fine": [
             {
-                "Output": ".44 Revolver",
+                "Item": ".44 Revolver",
                 "Chance": 0.45
             },
             {
-                "Output": "Crossvec",
+                "Item": "Crossvec",
                 "Chance": 0.55
             }
         ]
     },
     "SCP-018": {
-        "Rough": "Flashbang",
-        "Coarse": "Flashbang",
+        "Rough": "Flashbang Grenade",
+        "Coarse": "Flashbang Grenade",
         "1:1": "SCP-018",
         "Fine": "High-Explosive Grenade",
         "Very Fine": "Coin"
@@ -763,7 +745,7 @@
         ],
         "Coarse": [
             {
-                "Item": "First-Aid Kit",
+                "Item": "First Aid Kit",
                 "Chance": 0.5
             },
             {
@@ -800,7 +782,7 @@
         ],
         "1:1": [
             {
-                "Item": "First-Aid Kit",
+                "Item": "First Aid Kit",
                 "Chance": 0.5
             },
             {
@@ -808,10 +790,10 @@
                 "Chance": 0.5
             }
         ],
-        "Fine": "First-Aid Kit",
+        "Fine": "First Aid Kit",
         "Very Fine": [
             {
-                "Item": "First-Aid Kit",
+                "Item": "First Aid Kit",
                 "Chance": 0.5
             },
             {
@@ -889,26 +871,22 @@
     ".44 Revolver": {
         "Rough": [
             {
-                "Output": {
-                    "Action": "Destroys the Item"
-                },
+                "Action": "Destroys the Item",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": ".44mag Ammo",
-                    "Count": 2
-                },
+                "Item": ".44mag Ammo",
+                "Count": 2,
                 "Chance": 0.5
             }
         ],
         "Coarse": [
             {
-                "Output": "COM-18",
+                "Item": "COM-18",
                 "Chance": 0.8
             },
             {
-                "Output": "High-Explosive Grenade",
+                "Item": "High-Explosive Grenade",
                 "Chance": 0.2
             }
         ],
@@ -918,10 +896,8 @@
         "Fine": "Crossvec",
         "Very Fine": [
             {
-                "Output": {
-                    "Item": "High-Explosive Grenade",
-                    "Count": 2
-                },
+                "Item": "High-Explosive Grenade",
+                "Count": 2,
                 "Chance": 0.5
             },
             {
@@ -929,7 +905,7 @@
                     "Zone Manager Keycard",
                     "COM-15",
                     "Painkillers",
-                    "First-Aid Kit"
+                    "First Aid Kit"
                 ],
                 "Chance": 0.5
             }
@@ -938,24 +914,22 @@
     "AK": {
         "Rough": [
             {
-                "Output": "COM-15",
+                "Item": "COM-15",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "7.62x39mm Ammo",
-                    "Count": 3
-                },
+                "Item": "7.62x39mm Ammo",
+                "Count": 3,
                 "Chance": 0.5
             }
         ],
         "Coarse": [
             {
-                "Output": "Crossvec",
+                "Item": "Crossvec",
                 "Chance": 0.5
             },
             {
-                "Output": "A7",
+                "Item": "A7",
                 "Chance": 0.5
             }
         ],
@@ -965,23 +939,23 @@
         "Fine": "MTF-E11-SR",
         "Very Fine": [
             {
-                "Output": "Micro H.I.D.",
+                "Item": "Micro H.I.D.",
                 "Chance": 0.05
             },
             {
-                "Output": "Logicer",
+                "Item": "Logicer",
                 "Chance": 0.25
             },
             {
-                "Output": "Shotgun",
+                "Item": "Shotgun",
                 "Chance": 0.1
             },
             {
-                "Output": "MTF-E11-SR",
+                "Item": "MTF-E11-SR",
                 "Chance": 0.3
             },
             {
-                "Output": "Crossvec",
+                "Item": "Crossvec",
                 "Chance": 0.3
             }
         ]
@@ -989,14 +963,12 @@
     "Shotgun": {
         "Rough": [
             {
-                "Output": "COM-15",
+                "Item": "COM-15",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "12/7 Buckshot Ammo",
-                    "Count": 2
-                },
+                "Item": "12/7 Buckshot Ammo",
+                "Count": 2,
                 "Chance": 0.5
             }
         ],
@@ -1007,19 +979,19 @@
         "Fine": "Logicer",
         "Very Fine": [
             {
-                "Output": "Micro H.I.D.",
+                "Item": "Micro H.I.D.",
                 "Chance": 0.05
             },
             {
-                "Output": "Logicer",
+                "Item": "Logicer",
                 "Chance": 0.25
             },
             {
-                "Output": "AK",
+                "Item": "AK",
                 "Chance": 0.4
             },
             {
-                "Output": "Crossvec",
+                "Item": "Crossvec",
                 "Chance": 0.3
             }
         ]
@@ -1028,17 +1000,15 @@
         "Rough": {
             "Action": "Immediately Shatters"
         },
-        "Coarse": "Flashbang",
+        "Coarse": "Flashbang Grenade",
         "1:1": {
-            "Output": {
-                "Item": "Coin",
-                "Count": 12
-            }
+            "Item": "Coin",
+            "Count": 12
         },
         "Fine": "COM-18",
         "Very Fine": [
             {
-                "Output": "Flashlight",
+                "Item": "Flashlight",
                 "Chance": 0.8
             },
             "MTF-E11-SR"
@@ -1092,23 +1062,21 @@
     "COM-45": {
         "Rough": [
             {
-                "Output": {
-                    "Action": "Destroys the Item"
-                },
+                "Action": "Destroys the Item",
                 "Chance": 0.5
             },
             {
-                "Output": "9x19mm Ammo",
+                "Item": "9x19mm Ammo",
                 "Chance": 0.5
             }
         ],
         "Coarse": [
             {
-                "Output": "COM-15",
+                "Item": "COM-15",
                 "Chance": 0.5
             },
             {
-                "Output": "9x19mm Ammo",
+                "Item": "9x19mm Ammo",
                 "Chance": 0.5
             }
         ],
@@ -1150,14 +1118,12 @@
     "FR-MG-0": {
         "Rough": [
             {
-                "Output": "MTF-E11-SR",
+                "Item": "MTF-E11-SR",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "5.56x45mm Ammo",
-                    "Count": 4
-                },
+                "Item": "5.56x45mm Ammo",
+                "Count": 4,
                 "Chance": 0.5
             }
         ],
@@ -1168,7 +1134,7 @@
         "Fine": "Logicer",
         "Very Fine": [
             {
-                "Output": "Micro H.I.D.",
+                "Item": "Micro H.I.D.",
                 "Chance": 0.05
             },
             {
@@ -1183,14 +1149,12 @@
     "A7": {
         "Rough": [
             {
-                "Output": "COM-15",
+                "Item": "COM-15",
                 "Chance": 0.5
             },
             {
-                "Output": {
-                    "Item": "7.62x39mm Ammo",
-                    "Count": 3
-                },
+                "Item": "7.62x39mm Ammo",
+                "Count": 3,
                 "Chance": 0.5
             }
         ],
@@ -1201,7 +1165,7 @@
         "Fine": "AK",
         "Very Fine": [
             ".44 Revolver",
-            "Flashbang"
+            "Flashbang Grenade"
         ]
     }
 }

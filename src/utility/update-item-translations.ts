@@ -19,7 +19,11 @@ export function updateItemTranslations() {
             const itemId = line.match(/\d+/)[0];
             let itemName = map.get(parseInt(itemId));
 
-            lines[i] += recipeToString(itemName);
+            const string = recipeToString(itemName);
+
+            if (string) {
+                lines[i] += recipeToString(itemName);
+            }
         }
 
         writeFileSync(itemsFilePath, lines.join("\r\n"));

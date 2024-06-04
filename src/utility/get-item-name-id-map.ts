@@ -9,12 +9,10 @@ export function getItemNameIdMap() {
     const itemIdMap = new Map<number, string>();
 
     for (const line of fileContents.split(/\r\n/)) {
-        const itemIdString = line.match(/\d+/)[0];
+        const split = line.split("~");
 
-        const itemText = line.slice(itemIdString.length + 1);
-
-        const itemName = (itemText.match(/.+(?=~)/))?.[0] ?? itemText;
-        // const itemDescription = (itemText === itemName) ? null : itemText.match(/(?<=~).+/)?.[0];
+        const itemIdString = split[0];
+        const itemName = split[1];
 
         itemIdMap.set(parseInt(itemIdString), itemName);
     }

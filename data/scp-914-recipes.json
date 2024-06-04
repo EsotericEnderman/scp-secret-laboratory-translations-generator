@@ -1167,5 +1167,32 @@
             ".44 Revolver",
             "Flashbang Grenade"
         ]
+    },
+    "Lantern": {
+        "Rough": {
+            "Action": "Destroys the Item"
+        },
+        "Coarse": [
+            {
+                "Action": "Destroys the Item",
+                "Chance": 0.5
+            },
+            {
+                "Item": "Lantern",
+                "Chance": 0.5
+            }
+        ],
+        "1:1": "Flashlight",
+        "Fine": "Radio",
+        "Very Fine": [
+            {
+                "Item": "Flashbang Grenade",
+                "Chance": 0.9
+            },
+            {
+                "Item": "SCP-2176",
+                "Chance": 0.1
+            }
+        ]
     }
 }

@@ -29,10 +29,16 @@ export const legacyInterfacesGiveOrdersIndex = 0;
 export const legacyInterfacesFollowOrdersIndex = 1;
 export const legacyInterfacesSameRankIndex = 2;
 
+export const scp049HUDFilePath = "/SCP049_HUD.txt";
+
+export const reviveIndex = 21;
+export const holdKeyIndex = 22;
+
 export const invisibleCharacter = "ㅤ"
 
 export const linesToRemove = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
     [disarmingFilePath]: [followOrdersIndex],
-    [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex]
+    [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex],
+    [scp049HUDFilePath]: [reviveIndex, holdKeyIndex]
 }

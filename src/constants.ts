@@ -4,6 +4,7 @@ export const itemsFilePath = "/Items.txt";
 export const classDescriptionsFilePath = "/Class_Descriptions.txt"
 export const facilityFilePath = "/Facility.txt"
 export const disarmingFilePath = "/Disarming.txt"
+export const legacyInterfacesFilePath = "/Legacy_Interfaces.txt";
 
 export const workDirectoryPath = "work";
 export const dataFolderPath = "data";
@@ -22,7 +23,12 @@ export const cancelThrowKeybindIndex = 41;
 
 export const followOrdersIndex = 2;
 
+export const legacyInterfacesGiveOrdersIndex = 0;
+export const legacyInterfacesFollowOrdersIndex = 1;
+export const legacyInterfacesSameRankIndex = 2;
+
 export const linesToRemove = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
-    [disarmingFilePath]: [followOrdersIndex]
+    [disarmingFilePath]: [followOrdersIndex],
+    [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex]
 }

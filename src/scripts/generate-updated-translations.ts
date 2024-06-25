@@ -23,3 +23,5 @@ updateLanguageManifests();
 renameLanguageDirectories();
 
 importUpdatedTranslations();
+
+clearWorkDirectory();

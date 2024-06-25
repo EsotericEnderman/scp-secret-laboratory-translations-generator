@@ -1,6 +1,6 @@
 import {readdirSync, rmSync} from "fs";
 
-export function clearOutputDirectory() {
+export function clearWorkDirectory() {
     const outputDirectoryPath = "out";
 
     const contents = readdirSync(outputDirectoryPath);

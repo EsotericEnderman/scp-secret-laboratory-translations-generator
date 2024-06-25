@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "generate-updated-translations": "node distrib/scripts/generate-updated-translations.js",
-    "clear-output": "node distrib/scripts/clear-output.js"
+    "clear-work-directory": "node distrib/scripts/clear-output.js"
   },
   "keywords": [
     "scp",

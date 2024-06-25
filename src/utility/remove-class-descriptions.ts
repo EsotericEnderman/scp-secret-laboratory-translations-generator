@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { classDescriptionsFilePath } from "../constants.js";
+import { classDescriptionsFilePath, invisibleCharacter } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 
 export function removeClassDescriptions() {
@@ -10,10 +10,12 @@ export function removeClassDescriptions() {
 
         const lines = classDescriptionsFile.split(/\r\n/);
 
-        for (let i = 0; i < lines.length; i++) {
-            lines[i] = "\r\n";
+        let string = invisibleCharacter;
+
+        for (let i = 1; i < lines.length; i++) {
+            string += "\r\n" + invisibleCharacter;
         }
 
-        writeFileSync(classDescriptionsFullFilePath, lines.join(""));
+        writeFileSync(classDescriptionsFullFilePath, string);
     })
 }

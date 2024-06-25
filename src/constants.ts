@@ -28,17 +28,25 @@ export const legacyInterfacesFilePath = "/Legacy_Interfaces.txt";
 export const legacyInterfacesGiveOrdersIndex = 0;
 export const legacyInterfacesFollowOrdersIndex = 1;
 export const legacyInterfacesSameRankIndex = 2;
+export const legacyInterfacesYouDiedIndex = 14;
+export const legacyInterfacesYouWereKilledByIndex = 15;
+export const legacyInterfacesAsIndex = 16;
 
 export const scp049HUDFilePath = "/SCP049_HUD.txt";
 
 export const reviveIndex = 21;
 export const holdKeyIndex = 22;
 
+export const version7FilePath = "/Version_7-0-0.txt";
+
+export const youDiedIndex = 0;
+
 export const invisibleCharacter = "ㅤ"
 
 export const linesToRemove = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
     [disarmingFilePath]: [followOrdersIndex],
-    [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex],
-    [scp049HUDFilePath]: [reviveIndex, holdKeyIndex]
+    [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
+    [scp049HUDFilePath]: [reviveIndex, holdKeyIndex],
+    [version7FilePath]: [youDiedIndex]
 }

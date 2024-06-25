@@ -484,7 +484,7 @@
         "1:1": {
             "Action": "Randomizes Attachments"
         },
-        "Fine": "FR-MG-0",
+        "Fine": "AK",
         "Very Fine": [
             {
                 "Item": "Micro H.I.D.",
@@ -753,15 +753,15 @@
                 "Chance": 0.5
             }
         ],
-        "1:1": "Adrenaline",
+        "1:1": "Painkillers",
         "Fine": "SCP-500",
         "Very Fine": [
             {
-                "Action": "Destroys the Item",
+                "Item": "Painkillers",
                 "Chance": 0.6666667
             },
             {
-                "Item": "SCP-1853",
+                "Item": "SCP-500",
                 "Chance": 0.333333343
             }
         ]

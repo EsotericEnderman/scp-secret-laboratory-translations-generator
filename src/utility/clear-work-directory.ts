@@ -1,11 +1,10 @@
-import {readdirSync, rmSync} from "fs";
+import { rmSync} from "fs";
+import { workDirectoryPath } from "../constants.js";
 
 export function clearWorkDirectory() {
-    const outputDirectoryPath = "out";
+    try {
+        rmSync(workDirectoryPath, {recursive: true});
+    } catch (error) {
 
-    const contents = readdirSync(outputDirectoryPath);
-
-    for (const content of contents) {
-        rmSync(outputDirectoryPath + "/" + content, {recursive: true});
     }
 }

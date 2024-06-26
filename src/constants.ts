@@ -1,3 +1,13 @@
+export const newLineCharacter = "\r\n";
+export const translationFilesNewLineCharacter = "\\n";
+export const invisibleCharacter = "ㅤ"
+export const splitCharacter = "~";
+
+export const playerVariable = "[player]";
+export const userVariable = "[user]";
+export const classVariable = "[class]";
+export const causeVariable = "[cause]";
+
 export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/Translations";
 
 export const workDirectoryPath = "work";
@@ -70,10 +80,6 @@ export const linesToRemove: {[filePath: string]: [number, number[]]} = {
 }
 
 export const textToReplace: {[filePath: string]: [number, string][]} = {
-    [disarmingFilePath]: [[detainedByPlayerIndex, "[player]"]],
-    [deathReasonsFilePath]: [[userClassDeathCauseIndex, "[user]\\n[class]\\n[cause]"]]
+    [disarmingFilePath]: [[detainedByPlayerIndex, playerVariable]],
+    [deathReasonsFilePath]: [[userClassDeathCauseIndex, `${userVariable}${translationFilesNewLineCharacter}${classVariable}${translationFilesNewLineCharacter}${causeVariable}`]]
 }
-
-export const newLineCharacter = "\r\n";
-export const invisibleCharacter = "ㅤ"
-export const splitCharacter = "~";

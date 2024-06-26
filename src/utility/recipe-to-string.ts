@@ -1,4 +1,5 @@
 import scp914RecipesData from "../../data/scp-914-recipes.json" with { type: "json" };
+import { translationFilesNewLineCharacter } from "../constants.js";
 import { SCP914MultipleRecipeOutputList, SCP914RecipeOutput, SCP914Recipes, isSCP914ActionRecipeOutput, isSCP914ChanceRecipeOutput, isSCP914Item, isSCP914ItemCountRecipeOutput, isSCP914ItemRecipeOutput } from "../types.js";
 import { getItemTranslation } from "./get-item-translation.js";
 
@@ -28,7 +29,7 @@ export function recipeToString(itemName: string, languageFolderName: string) {
             settingOutput += handleSingle914Output(recipeOutput, languageFolderName);
         }
 
-        output += "\\n<color=yellow>" + scp914Setting + "</color> - " + settingOutput;
+        output += translationFilesNewLineCharacter + "<color=yellow>" + scp914Setting + "</color> - " + settingOutput;
     }
 
     return output;

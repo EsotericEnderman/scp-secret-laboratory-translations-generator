@@ -7,6 +7,9 @@ export const playerVariable = "[player]";
 export const userVariable = "[user]";
 export const classVariable = "[class]";
 export const causeVariable = "[cause]";
+export const escapeMinutesVariable = "[escape_minutes]";
+export const escapeSecondsVariable = "[escape_seconds]";
+export const timeVariable = "[time]"
 
 export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/Translations";
 
@@ -24,7 +27,10 @@ export const facilityFilePath = "/Facility.txt"
 export const scientistEscapeIndex = 29
 export const classDEscapeIndex = 30;
 export const youAreTextIndex = 31;
+export const escapeTimeIndex = 32;
+export const waitTimeUntilUseIndex = 33;
 export const pressF1ForHelpIndex = 34;
+export const blowOutCandlesIndex = 48;
 
 export const cuffedIndex = 35;
 
@@ -67,7 +73,7 @@ export const deathReasonsFilePath = "/DeathReasons.txt";
 export const userClassDeathCauseIndex = 0;
 
 export const textToRemove: {[filePath: string]: number[]} = {
-    [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
+    [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex, blowOutCandlesIndex],
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
     [version7FilePath]: [youDiedIndex],
@@ -80,6 +86,7 @@ export const linesToRemove: {[filePath: string]: [number, number[]]} = {
 }
 
 export const textToReplace: {[filePath: string]: [number, string][]} = {
+    [facilityFilePath]: [[escapeTimeIndex, escapeMinutesVariable + ":" + escapeSecondsVariable], [waitTimeUntilUseIndex, timeVariable]],
     [disarmingFilePath]: [[detainedByPlayerIndex, playerVariable]],
     [deathReasonsFilePath]: [[userClassDeathCauseIndex, `${userVariable}${translationFilesNewLineCharacter}${classVariable}${translationFilesNewLineCharacter}${causeVariable}`]]
 }

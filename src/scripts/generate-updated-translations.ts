@@ -11,9 +11,9 @@ clearWorkDirectory();
 
 copyTranslationFolder(translationsFolderPath);
 
-updateItemTranslations();
-
 removeUnneededText();
+
+updateItemTranslations();
 
 updateLanguageManifests();
 

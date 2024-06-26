@@ -42,6 +42,7 @@ export const version7FilePath = "/Version_7-0-0.txt";
 export const youDiedIndex = 0;
 
 export const invisibleCharacter = "ㅤ"
+export const splitCharacter = "~";
 
 export const linesToRemove = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],

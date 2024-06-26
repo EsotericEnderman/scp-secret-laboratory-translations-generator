@@ -25,6 +25,8 @@ export const scp914RecipesFilePath = dataFolderPath + "/scp-914-recipes.json";
 
 export const itemsFilePath = "/Items.txt";
 
+export const classNamesFilePath = "/Class_Names.txt"
+
 export const classDescriptionsFilePath = "/Class_Descriptions.txt"
 
 export const facilityFilePath = "/Facility.txt"

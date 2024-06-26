@@ -4,6 +4,7 @@ import { loopTranslationLanguages } from "./loop-translation-languages.js";
 import { removeClassDescriptions } from "./remove-class-descriptions.js";
 import { removeItemDescriptions } from "./remove-item-descriptions.js";
 import { removeUnneededLines } from "./remove-unneeded-lines.js";
+import { removeSCPText } from "./remove-scp-text.js";
 
 export function removeUnneededText() {
     removeClassDescriptions();
@@ -11,6 +12,8 @@ export function removeUnneededText() {
     removeItemDescriptions();
 
     removeUnneededLines();
+
+    removeSCPText();
 
     loopTranslationLanguages((folderPath) => {
         for (const filePath in textToRemove) {

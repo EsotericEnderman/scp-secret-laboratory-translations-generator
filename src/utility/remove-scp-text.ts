@@ -1,0 +1,24 @@
+import { readFileSync, writeFileSync } from "fs";
+import { classNamesFilePath, newLineCharacter } from "../constants.js";
+import { loopTranslationLanguages } from "./loop-translation-languages.js";
+
+export function removeSCPText() {
+    loopTranslationLanguages((folderPath) => {
+        const fullFilePath = folderPath + classNamesFilePath;
+
+        const fileContent = readFileSync(fullFilePath).toString();
+
+        const lines = fileContent.split(newLineCharacter);
+
+        for (let i = 0; i < lines.length; i++) {
+            let line = lines[i];
+
+            line = line.replace("SCP-", "");
+            line = line.replace(/^0+/, "");
+
+            lines[i] = line;
+        }
+
+        writeFileSync(fullFilePath, lines.join(newLineCharacter));
+    })
+}

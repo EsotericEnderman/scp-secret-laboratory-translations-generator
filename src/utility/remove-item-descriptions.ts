@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { itemsFilePath, splitCharacter } from "../constants.js";
+import { itemsFilePath, newLineCharacter, splitCharacter } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 
 export function removeItemDescriptions() {
@@ -8,7 +8,7 @@ export function removeItemDescriptions() {
 
         const fileContent = readFileSync(itemsFileFullPath).toString();
 
-        const lines = fileContent.split("\r\n");
+        const lines = fileContent.split(newLineCharacter);
 
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
@@ -20,6 +20,6 @@ export function removeItemDescriptions() {
             }
         }
 
-        writeFileSync(itemsFileFullPath, lines.join("\r\n"));
+        writeFileSync(itemsFileFullPath, lines.join(newLineCharacter));
     })
 }

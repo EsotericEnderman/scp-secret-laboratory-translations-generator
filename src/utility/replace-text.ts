@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { textToReplace } from "../constants.js";
+import { newLineCharacter, textToReplace } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 
 export function replaceText() {
@@ -9,7 +9,7 @@ export function replaceText() {
 
             const fileContent = readFileSync(fullFilePath).toString();
 
-            const lines = fileContent.split("\r\n");
+            const lines = fileContent.split(newLineCharacter);
 
             const info = textToReplace[filePath];
             
@@ -20,7 +20,7 @@ export function replaceText() {
                 lines[index] = string;
             }
 
-            writeFileSync(fullFilePath, lines.join("\r\n"));
+            writeFileSync(fullFilePath, lines.join(newLineCharacter));
         }
     })
 }

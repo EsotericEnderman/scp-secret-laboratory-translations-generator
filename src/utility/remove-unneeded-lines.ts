@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { linesToRemove } from "../constants.js";
+import { linesToRemove, newLineCharacter } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 
 export function removeUnneededLines() {
@@ -9,7 +9,7 @@ export function removeUnneededLines() {
 
             const fileContent = readFileSync(fullFilePath).toString();
 
-            const lines = fileContent.split("\r\n");
+            const lines = fileContent.split(newLineCharacter);
 
             const info = linesToRemove[filePath];
 
@@ -26,7 +26,7 @@ export function removeUnneededLines() {
             line = splitLine.join("\\n");
             lines[index] = line;
 
-            writeFileSync(fullFilePath, lines.join("\r\n"));
+            writeFileSync(fullFilePath, lines.join(newLineCharacter));
         }
     })
 }

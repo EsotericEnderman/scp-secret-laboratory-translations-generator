@@ -72,5 +72,6 @@ export const textToReplace: {[filePath: string]: [number, string][]} = {
     [deathReasonsFilePath]: [[userClassDeathCauseIndex, "[user]\\n[class]\\n[cause]"]]
 }
 
+export const newLineCharacter = "\r\n";
 export const invisibleCharacter = "ㅤ"
 export const splitCharacter = "~";

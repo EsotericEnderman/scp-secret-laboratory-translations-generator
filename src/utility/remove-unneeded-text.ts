@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-import { invisibleCharacter, textToRemove } from "../constants.js";
+import { invisibleCharacter, newLineCharacter, textToRemove } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 import { removeClassDescriptions } from "./remove-class-descriptions.js";
 import { removeItemDescriptions } from "./remove-item-descriptions.js";
@@ -24,7 +24,7 @@ export function removeUnneededText() {
                 return;
             }
 
-            const lines = fileContent.split(/\r\n/);
+            const lines = fileContent.split(newLineCharacter);
 
             const textIndexesToRemove = textToRemove[filePath];
 
@@ -32,7 +32,7 @@ export function removeUnneededText() {
                 lines[index] = invisibleCharacter;
             }
 
-            writeFileSync(path, lines.join("\r\n"));
+            writeFileSync(path, lines.join(newLineCharacter));
         }
     })
 }

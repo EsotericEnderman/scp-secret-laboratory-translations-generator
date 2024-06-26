@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 import { getItemNameIdMap } from "./get-item-name-id-map.js";
 import { recipeToString } from "./recipe-to-string.js";
-import { itemsFilePath } from "../constants.js";
+import { itemsFilePath, newLineCharacter } from "../constants.js";
 
 export function updateItemTranslations() {
     loopTranslationLanguages((folderPath) => {
@@ -15,7 +15,7 @@ export function updateItemTranslations() {
 
         const map = getItemNameIdMap();
 
-        const lines = itemsFile.split(/\r\n/);
+        const lines = itemsFile.split(newLineCharacter);
 
         for (let i = 0; i < lines.length; i++) {
             let line = lines[i];
@@ -29,6 +29,6 @@ export function updateItemTranslations() {
             }
         }
 
-        writeFileSync(itemsFileFullPath, lines.join("\r\n"));
+        writeFileSync(itemsFileFullPath, lines.join(newLineCharacter));
     })
 }

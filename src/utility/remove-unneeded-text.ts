@@ -13,7 +13,14 @@ export function removeUnneededText() {
         for (const filePath in linesToRemove) {
             const path = folderPath + filePath;
 
-            const fileContent = readFileSync(path).toString();
+            let fileContent: string;
+
+            try {
+                fileContent = readFileSync(path).toString();
+            } catch (error) {
+                return;
+            }
+
             const lines = fileContent.split(/\r\n/);
             
             const lineIndexesToRemove = linesToRemove[filePath];

@@ -37,6 +37,11 @@ export const scp049HUDFilePath = "/SCP049_HUD.txt";
 export const reviveIndex = 21;
 export const holdKeyIndex = 22;
 
+export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
+
+export const disguiseIndex = 9;
+export const strangulationCooldownIndex = 10;
+
 export const version7FilePath = "/Version_7-0-0.txt";
 
 export const youDiedIndex = 0;
@@ -49,5 +54,6 @@ export const linesToRemove = {
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
     [scp049HUDFilePath]: [reviveIndex, holdKeyIndex],
+    [scp3114HUDFilePath]: [disguiseIndex, strangulationCooldownIndex],
     [version7FilePath]: [youDiedIndex]
 }

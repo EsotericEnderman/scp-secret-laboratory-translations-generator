@@ -9,7 +9,12 @@ export const classVariable = "[class]";
 export const causeVariable = "[cause]";
 export const escapeMinutesVariable = "[escape_minutes]";
 export const escapeSecondsVariable = "[escape_seconds]";
-export const timeVariable = "[time]"
+export const timeVariable = "[time]";
+export const designationVariable = "[designation]";
+export const countVariable = "[count]";
+export const scpVariable = "[scp]";
+export const currentVariable = "[current]";
+export const maximumVariable = "[max]";
 
 export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/Translations";
 
@@ -62,6 +67,25 @@ export const deathReasonsFilePath = "/DeathReasons.txt";
 
 export const userClassDeathCauseIndex = 0;
 
+export const inventoryGuiFilePath = "/InventoryGUI.txt"
+
+export const ammoCountIndex = 0;
+export const totalIndex = 14;
+
+export const subtitlesFilePath = "/Subtitles.txt";
+
+export const mtfEntryIndex = 0;
+export const scpSubjectsMultipleRemainingIndex = 1;
+export const scpSubjectsSingleRemainingIndex = 2;
+export const scpIndex = 11;
+export const generatorsActivatedIndex = 15;
+export const lczDecontaminationIn15MinutesIndex = 19;
+export const lczDecontaminationInTimeMinutesIndex = 20;
+export const lczDecontaminationIn1MinuteIndex = 21;
+export const lczDecontaminationIn30SecondsIndex = 22;
+export const detonationStartedIndex = 24;
+export const detonationResumedIndex = 26;
+
 export const scp049HUDFilePath = "/SCP049_HUD.txt";
 
 export const reviveIndex = 21;
@@ -72,7 +96,7 @@ export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 export const disguiseIndex = 9;
 export const strangulationCooldownIndex = 10;
 
-export const textToRemove: {[filePath: string]: number[]} = {
+export const textToRemove: { [filePath: string]: number[] } = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex, blowOutCandlesIndex],
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
@@ -81,12 +105,14 @@ export const textToRemove: {[filePath: string]: number[]} = {
     [scp3114HUDFilePath]: [disguiseIndex, strangulationCooldownIndex],
 }
 
-export const linesToRemove: {[filePath: string]: [number, number[]]} = {
+export const linesToRemove: { [filePath: string]: [number, number[]] } = {
     [facilityFilePath]: [cuffedIndex, [cuffedFollowOrdersLineIndex]]
 }
 
-export const textToReplace: {[filePath: string]: [number, string][]} = {
+export const textToReplace: { [filePath: string]: [number, string][] } = {
     [facilityFilePath]: [[escapeTimeIndex, escapeMinutesVariable + ":" + escapeSecondsVariable], [waitTimeUntilUseIndex, timeVariable]],
     [disarmingFilePath]: [[detainedByPlayerIndex, playerVariable]],
-    [deathReasonsFilePath]: [[userClassDeathCauseIndex, `${userVariable}${translationFilesNewLineCharacter}${classVariable}${translationFilesNewLineCharacter}${causeVariable}`]]
+    [deathReasonsFilePath]: [[userClassDeathCauseIndex, `${userVariable}${translationFilesNewLineCharacter}${classVariable}${translationFilesNewLineCharacter}${causeVariable}`]],
+    [inventoryGuiFilePath]: [[ammoCountIndex, "{0}/{1} {2}"], [totalIndex, "{0}"]],
+    [subtitlesFilePath]: [[mtfEntryIndex, designationVariable], [scpSubjectsMultipleRemainingIndex, countVariable], [scpSubjectsSingleRemainingIndex, "1"], [scpIndex, scpVariable], [generatorsActivatedIndex, currentVariable + "/" + maximumVariable], [lczDecontaminationIn15MinutesIndex, "15"], [lczDecontaminationInTimeMinutesIndex, timeVariable], [lczDecontaminationIn1MinuteIndex, "1"], [lczDecontaminationIn30SecondsIndex, "0.5"], [detonationStartedIndex, timeVariable], [detonationResumedIndex, timeVariable]]
 }

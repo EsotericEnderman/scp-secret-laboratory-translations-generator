@@ -19,6 +19,7 @@ export function updateItemTranslations() {
 
         for (let i = 0; i < lines.length; i++) {
             let line = lines[i];
+
             const itemId = line.match(/\d+/)[0];
             let itemName = map.get(parseInt(itemId));
 

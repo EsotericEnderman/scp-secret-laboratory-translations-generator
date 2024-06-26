@@ -50,7 +50,7 @@ export const invisibleCharacter = "ㅤ"
 export const splitCharacter = "~";
 
 export const linesToRemove = {
-    [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
+    [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
     [scp049HUDFilePath]: [reviveIndex, holdKeyIndex],

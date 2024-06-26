@@ -98,6 +98,10 @@ export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 export const disguiseIndex = 9;
 export const strangulationCooldownIndex = 10;
 
+export const scp1507FilePath = "/SCP1507_HUD.txt";
+
+export const vocaliseIndex = 4;
+
 export const textToRemove: { [filePath: string]: number[] } = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex, blowOutCandlesIndex],
     [disarmingFilePath]: [followOrdersIndex],
@@ -105,6 +109,7 @@ export const textToRemove: { [filePath: string]: number[] } = {
     [version7FilePath]: [youDiedIndex],
     [scp049HUDFilePath]: [reviveIndex, holdKeyIndex],
     [scp3114HUDFilePath]: [disguiseIndex, strangulationCooldownIndex],
+    [scp1507FilePath]: [vocaliseIndex]
 }
 
 export const linesToRemove: { [filePath: string]: [number, number[]] } = {

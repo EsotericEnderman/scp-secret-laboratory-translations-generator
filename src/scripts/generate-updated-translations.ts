@@ -14,8 +14,6 @@ copyTranslationFolder(translationsFolderPath);
 
 updateItemTranslations();
 
-removeClassDescriptions();
-
 removeUnneededText();
 
 updateLanguageManifests();

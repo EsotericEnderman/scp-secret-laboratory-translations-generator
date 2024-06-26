@@ -58,6 +58,10 @@ export const version7FilePath = "/Version_7-0-0.txt";
 
 export const youDiedIndex = 0;
 
+export const deathReasonsFilePath = "/DeathReasons.txt";
+
+export const userClassDeathCauseIndex = 0;
+
 export const scp049HUDFilePath = "/SCP049_HUD.txt";
 
 export const reviveIndex = 21;
@@ -67,10 +71,6 @@ export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 
 export const disguiseIndex = 9;
 export const strangulationCooldownIndex = 10;
-
-export const deathReasonsFilePath = "/DeathReasons.txt";
-
-export const userClassDeathCauseIndex = 0;
 
 export const textToRemove: {[filePath: string]: number[]} = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex, blowOutCandlesIndex],

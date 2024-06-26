@@ -26,6 +26,7 @@ export const cancelThrowKeybindIndex = 41;
 
 export const disarmingFilePath = "/Disarming.txt"
 
+export const detainedByPlayerIndex = 0;
 export const followOrdersIndex = 2;
 
 export const legacyInterfacesFilePath = "/Legacy_Interfaces.txt";
@@ -69,6 +70,7 @@ export const linesToRemove: {[filePath: string]: [number, number[]]} = {
 }
 
 export const textToReplace: {[filePath: string]: [number, string][]} = {
+    [disarmingFilePath]: [[detainedByPlayerIndex, "[player]"]],
     [deathReasonsFilePath]: [[userClassDeathCauseIndex, "[user]\\n[class]\\n[cause]"]]
 }
 

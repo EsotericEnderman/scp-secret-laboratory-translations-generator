@@ -27,6 +27,8 @@ export const itemsFilePath = "/Items.txt";
 
 export const classNamesFilePath = "/Class_Names.txt"
 
+export const raRoleManagementFilePath = "/RA_RoleManagement.txt";
+
 export const classDescriptionsFilePath = "/Class_Descriptions.txt"
 
 export const facilityFilePath = "/Facility.txt"

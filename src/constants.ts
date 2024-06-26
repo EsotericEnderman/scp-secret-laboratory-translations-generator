@@ -51,6 +51,10 @@ export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 export const disguiseIndex = 9;
 export const strangulationCooldownIndex = 10;
 
+export const deathReasonsFilePath = "/DeathReasons.txt";
+
+export const userClassDeathCauseIndex = 0;
+
 export const textToRemove: {[filePath: string]: number[]} = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
     [disarmingFilePath]: [followOrdersIndex],
@@ -62,6 +66,10 @@ export const textToRemove: {[filePath: string]: number[]} = {
 
 export const linesToRemove: {[filePath: string]: [number, number[]]} = {
     [facilityFilePath]: [cuffedIndex, [cuffedFollowOrdersLineIndex]]
+}
+
+export const textToReplace: {[filePath: string]: [number, string][]} = {
+    [deathReasonsFilePath]: [[userClassDeathCauseIndex, "[user]\\n[class]\\n[cause]"]]
 }
 
 export const invisibleCharacter = "ㅤ"

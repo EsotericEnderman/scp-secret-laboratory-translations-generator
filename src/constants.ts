@@ -15,6 +15,11 @@ export const scientistEscapeIndex = 29
 export const classDEscapeIndex = 30;
 export const youAreTextIndex = 31;
 export const pressF1ForHelpIndex = 34;
+
+export const cuffedIndex = 35;
+
+export const cuffedFollowOrdersLineIndex = 1;
+
 export const classDCaptureIndex = 36;
 export const scientistCaptureIndex = 37;
 export const cancelThrowKeybindIndex = 41;
@@ -46,13 +51,17 @@ export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 export const disguiseIndex = 9;
 export const strangulationCooldownIndex = 10;
 
-export const linesToRemove = {
+export const textToRemove: {[filePath: string]: number[]} = {
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex],
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
     [version7FilePath]: [youDiedIndex],
     [scp049HUDFilePath]: [reviveIndex, holdKeyIndex],
     [scp3114HUDFilePath]: [disguiseIndex, strangulationCooldownIndex],
+}
+
+export const linesToRemove: {[filePath: string]: [number, number[]]} = {
+    [facilityFilePath]: [cuffedIndex, [cuffedFollowOrdersLineIndex]]
 }
 
 export const invisibleCharacter = "ㅤ"

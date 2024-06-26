@@ -1,16 +1,19 @@
 import { readFileSync, writeFileSync } from "fs";
-import { invisibleCharacter, linesToRemove } from "../constants.js";
+import { invisibleCharacter, textToRemove } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
 import { removeClassDescriptions } from "./remove-class-descriptions.js";
 import { removeItemDescriptions } from "./remove-item-descriptions.js";
+import { removeUnneededLines } from "./remove-unneeded-lines.js";
 
 export function removeUnneededText() {
     removeClassDescriptions();
 
     removeItemDescriptions();
 
+    removeUnneededLines();
+
     loopTranslationLanguages((folderPath) => {
-        for (const filePath in linesToRemove) {
+        for (const filePath in textToRemove) {
             const path = folderPath + filePath;
 
             let fileContent: string;
@@ -22,10 +25,10 @@ export function removeUnneededText() {
             }
 
             const lines = fileContent.split(/\r\n/);
-            
-            const lineIndexesToRemove = linesToRemove[filePath];
 
-            for (const index of lineIndexesToRemove) {
+            const textIndexesToRemove = textToRemove[filePath];
+
+            for (const index of textIndexesToRemove) {
                 lines[index] = invisibleCharacter;
             }
 

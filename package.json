@@ -2,7 +2,7 @@
   "name": "scp-secret-laboratory-translations",
   "version": "1.0.0",
   "description": "Better translations for SCP: Secret Laboratory.",
-  "main": "index.js",
+  "main": "distrib/scripts/generate-updated-translations.js",
   "scripts": {
     "generate-updated-translations": "node distrib/scripts/generate-updated-translations.js",
     "clear-work-directory": "node distrib/scripts/clear-output.js"

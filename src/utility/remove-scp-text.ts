@@ -13,8 +13,8 @@ export function removeSCPText() {
             for (let i = 0; i < lines.length; i++) {
                 let line = lines[i];
 
-                line = line.replace(/(\w+)-0+(\d+)/, "$1-$2");
-                line = line.replace(/SCP-/, "");
+                line = line.replace(/(\w+)-0+(\d+)/g, "$1-$2");
+                line = line.replace(/SCP-/g, "");
 
                 lines[i] = line;
             }

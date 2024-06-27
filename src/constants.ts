@@ -2,6 +2,22 @@ export const newLineCharacter = "\r\n";
 export const translationFilesNewLineCharacter = "\\n";
 export const invisibleCharacter = "ㅤ"
 export const splitCharacter = "~";
+export const plusSign = "+";
+export const minusSign = "-";
+export const space = " ";
+export const x = "x";
+export const colon = ":";
+export const dollarSign = "$";
+export const slash = "/";
+export const leftBracket = "(";
+export const rightBracket = ")";
+
+export const leftCurvyBracket = "{";
+export const rightCurvyBracket = "}";
+
+export function indexedVariable(index: number) {
+    return leftCurvyBracket + index.toString() + rightCurvyBracket;
+}
 
 export const playerVariable = "[player]";
 export const userVariable = "[user]";
@@ -18,7 +34,25 @@ export const maximumVariable = "[max]";
 export const ammoTypeVariable = "[ammotype]";
 export const roleVariable = "[role]";
 export const roleNameVariable = "[role_name]";
-export const playerNameVariable = "[player_name]"
+export const playerNameVariable = "[player_name]";
+export const cameraNameVariable = "[camera_name]";
+export const zoneVariable = "[zone]";
+export const zoomAmountVariable = "[amount]";
+
+export const scp049 = "49";
+export const scp049_2 = "49-2";
+export const scp096 = "96";
+export const scp079 = "79";
+export const scp173 = "173";
+export const scp012 = "12";
+export const scp106 = "106";
+export const scp939 = "939";
+export const scp207 = "207";
+export const scp1853 = "1853";
+export const scp330 = "330";
+export const scp244 = "244";
+
+export const poisonDeath = scp1853 + space + plusSign + space + scp207;
 
 export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/Translations";
 
@@ -190,38 +224,38 @@ export const linesToRemove: { [filePath: string]: [number, number[]] } = {
 }
 
 export const textToReplace: { [filePath: string]: [number, string][] } = {
-    [facilityFilePath]: [[escapeTimeIndex, escapeMinutesVariable + ":" + escapeSecondsVariable], [waitTimeUntilUseIndex, timeVariable]],
+    [facilityFilePath]: [[escapeTimeIndex, escapeMinutesVariable + colon + escapeSecondsVariable], [waitTimeUntilUseIndex, timeVariable]],
     [disarmingFilePath]: [[detainedByPlayerIndex, playerVariable]],
     [deathReasonsFilePath]: [
         [userClassDeathCauseIndex, `${userVariable}${translationFilesNewLineCharacter}${classVariable}${translationFilesNewLineCharacter}${causeVariable}`],
-        [scp049DeathIndex, "49"],
-        [pocketDimensionDeathIndex, "106"],
-        [poisonDeathIndex, "1853 + 207"],
-        [alternativePoisonDeathIndex, "1853 + 207"],
-        [scp207DeathIndex, "207"],
-        [alternativeSCP207DeathIndex, "207"],
-        [scp330DeathIndex, "330"],
-        [scp096DeathIndex, "96"],
-        [scp173DeathIndex, "173"],
-        [scp939DeathIndex, "939"],
-        [scp049_2DeathIndex, "49-2"],
+        [scp049DeathIndex, scp049],
+        [pocketDimensionDeathIndex, scp106],
+        [poisonDeathIndex, poisonDeath],
+        [alternativePoisonDeathIndex, poisonDeath],
+        [scp207DeathIndex, scp207],
+        [alternativeSCP207DeathIndex, scp207],
+        [scp330DeathIndex, scp330],
+        [scp096DeathIndex, scp096],
+        [scp173DeathIndex, scp173],
+        [scp939DeathIndex, scp939],
+        [scp049_2DeathIndex, scp049_2],
         [ammoTypeIndex, ammoTypeVariable],
-        [scp012DeathIndex, "12"],
-        [scp106RecontainmentIndex, "106"],
-        [alternativeSCP106RecontainmentIndex, "106"],
-        [scp244DeathIndex, "244"],
-        [alternativeSCP244DeathIndex, "244"],
-        [alternativeScp939DeathIndex, "939"]
+        [scp012DeathIndex, scp012],
+        [scp106RecontainmentIndex, scp106],
+        [alternativeSCP106RecontainmentIndex, scp106],
+        [scp244DeathIndex, scp244],
+        [alternativeSCP244DeathIndex, scp244],
+        [alternativeScp939DeathIndex, scp939]
     ],
-    [inventoryGuiFilePath]: [[ammoCountIndex, "{0}/{1} {2}"], [totalIndex, "{0}"]],
-    [subtitlesFilePath]: [[mtfEntryIndex, designationVariable + " - "], [scpSubjectsMultipleRemainingIndex, countVariable], [scpSubjectsSingleRemainingIndex, "1"], [scpIndex, scpVariable], [generatorsActivatedIndex, currentVariable + "/" + maximumVariable], [lczDecontaminationIn15MinutesIndex, "15"], [lczDecontaminationInTimeMinutesIndex, timeVariable], [lczDecontaminationIn1MinuteIndex, "1"], [lczDecontaminationIn30SecondsIndex, "0.5"], [detonationStartedIndex, timeVariable], [detonationResumedIndex, timeVariable]],
+    [inventoryGuiFilePath]: [[ammoCountIndex, `${indexedVariable(0)}${slash}${indexedVariable(1)}${space}${indexedVariable(2)}`], [totalIndex, indexedVariable(0)]],
+    [subtitlesFilePath]: [[mtfEntryIndex, designationVariable + space + minusSign + space], [scpSubjectsMultipleRemainingIndex, countVariable], [scpSubjectsSingleRemainingIndex, (1).toString()], [scpIndex, scpVariable], [generatorsActivatedIndex, currentVariable + slash + maximumVariable], [lczDecontaminationIn15MinutesIndex, (15).toString()], [lczDecontaminationInTimeMinutesIndex, timeVariable], [lczDecontaminationIn1MinuteIndex, (1).toString()], [lczDecontaminationIn30SecondsIndex, (0.5).toString()], [detonationStartedIndex, timeVariable], [detonationResumedIndex, timeVariable]],
     [scp3114HUDFilePath]: [
         [unrecognisablePileOfBonesIndex, playerNameVariable],
         [roleDisguiseIndex, roleVariable]
     ],
     [scp079HUDFilePath]: [
-        [zoomIndex, "[amount]x"],
-        [scanResultIndex, "$[camera_name]$ ([zone]) - $[role]$"]
+        [zoomIndex, zoomAmountVariable + x],
+        [scanResultIndex, `${dollarSign}${cameraNameVariable}${dollarSign}${space}${leftBracket}${zoneVariable}${rightBracket}${space}${minusSign}${space}${dollarSign}${roleVariable}${dollarSign}`]
     ]
 }
 

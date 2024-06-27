@@ -15,6 +15,7 @@ export function replaceText() {
             try {
                 fileContent = readFileSync(fullFilePath).toString();
             } catch (error) {
+                console.log("Could not read file " + fullFilePath + ".");
                 return;
             }
 

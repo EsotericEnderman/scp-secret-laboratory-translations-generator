@@ -12,6 +12,7 @@ export function replaceLanguageSpecificText() {
             try {
                 fileContent = readFileSync(fullFilePath).toString();
             } catch (error) {
+                console.log("Could not read file " + fullFilePath + ".");
                 return;
             }
 
@@ -31,6 +32,7 @@ export function replaceLanguageSpecificText() {
                 try {
                     sourceFileContents = readFileSync(sourceFullFilePath).toString();
                 } catch (error) {
+                    console.log("Could not read source file " + sourceFullFilePath + ".");
                     continue replacementLoop;
                 }
 

@@ -24,6 +24,7 @@ export function removeUnneededText() {
             try {
                 fileContent = readFileSync(path).toString();
             } catch (error) {
+                console.log("Could not read file " + path + ".");
                 return;
             }
 

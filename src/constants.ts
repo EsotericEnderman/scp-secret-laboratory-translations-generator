@@ -75,6 +75,7 @@ export const deathReasonsFilePath = "/DeathReasons.txt";
 export const userClassDeathCauseIndex = 0;
 export const recontainedIndex = 1;
 export const scp049DeathIndex = 3;
+export const unknownCauseOfDeathIndex = 4;
 export const pocketDimensionDeathIndex = 11;
 export const poisonDeathIndex = 13;
 export const alternativePoisonDeathIndex = 14;
@@ -143,7 +144,7 @@ export const scp939HUDFilePath = "/SCP939_HUD.txt";
 export const lungeIndex = 0;
 
 export const textToRemove: { [filePath: string]: number[] } = {
-    [deathReasonsFilePath]: [recontainedIndex],
+    [deathReasonsFilePath]: [recontainedIndex, unknownCauseOfDeathIndex],
     [facilityFilePath]: [scientistEscapeIndex, classDEscapeIndex, youAreTextIndex, pressF1ForHelpIndex, classDCaptureIndex, scientistCaptureIndex, cancelThrowKeybindIndex, blowOutCandlesIndex],
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],

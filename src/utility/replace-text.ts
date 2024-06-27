@@ -1,8 +1,11 @@
 import { readFileSync, writeFileSync } from "fs";
 import { newLineCharacter, textToReplace } from "../constants.js";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
+import { replaceLanguageSpecificText } from "./replace-language-specific-text.js";
 
 export function replaceText() {
+    replaceLanguageSpecificText();
+
     loopTranslationLanguages((folderPath) => {
         for (const filePath in textToReplace) {
             const fullFilePath = folderPath + filePath;

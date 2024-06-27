@@ -62,6 +62,7 @@ export const legacyInterfacesFilePath = "/Legacy_Interfaces.txt";
 export const legacyInterfacesGiveOrdersIndex = 0;
 export const legacyInterfacesFollowOrdersIndex = 1;
 export const legacyInterfacesSameRankIndex = 2;
+export const legacyInterfacesAlphaWarheadIndex = 7;
 export const legacyInterfacesYouDiedIndex = 14;
 export const legacyInterfacesYouWereKilledByIndex = 15;
 export const legacyInterfacesAsIndex = 16;
@@ -74,6 +75,7 @@ export const deathReasonsFilePath = "/DeathReasons.txt";
 
 export const userClassDeathCauseIndex = 0;
 export const recontainedIndex = 1;
+export const detonatedByAlphaWarheadIndex = 2;
 export const scp049DeathIndex = 3;
 export const unknownCauseOfDeathIndex = 4;
 export const pocketDimensionDeathIndex = 11;
@@ -189,5 +191,11 @@ export const textToReplace: { [filePath: string]: [number, string][] } = {
     [scp3114HUDFilePath]: [
         [nowDisguisedAsIndex, roleNameVariable],
         [unrecognisablePileOfBonesIndex, playerNameVariable]
+    ]
+}
+
+export const languageSpecificTextToReplace: { [filePath: string]: [number, string, number][] } = {
+    [deathReasonsFilePath]: [
+        [detonatedByAlphaWarheadIndex, legacyInterfacesFilePath, legacyInterfacesAlphaWarheadIndex]
     ]
 }

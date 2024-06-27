@@ -1,9 +1,3 @@
-import { readdirSync, rmSync } from "fs";
+import { clearWorkDirectory } from "../utility/clear-work-directory.js";
 
-const outputDirectoryPath = "out";
-
-const contents = readdirSync(outputDirectoryPath);
-
-for (const content of contents) {
-    rmSync(outputDirectoryPath + "/" + content, {recursive: true});
-}
+clearWorkDirectory();

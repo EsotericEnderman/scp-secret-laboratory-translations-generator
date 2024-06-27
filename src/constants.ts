@@ -16,6 +16,7 @@ export const scpVariable = "[scp]";
 export const currentVariable = "[current]";
 export const maximumVariable = "[max]";
 export const ammoTypeVariable = "[ammotype]";
+export const roleVariable = "[role]";
 export const roleNameVariable = "[role_name]";
 export const playerNameVariable = "[player_name]"
 
@@ -78,12 +79,15 @@ export const recontainedIndex = 1;
 export const detonatedByAlphaWarheadIndex = 2;
 export const scp049DeathIndex = 3;
 export const unknownCauseOfDeathIndex = 4;
+export const severeElectricalBurnsIndex = 5;
 export const pocketDimensionDeathIndex = 11;
 export const poisonDeathIndex = 13;
 export const alternativePoisonDeathIndex = 14;
 export const scp207DeathIndex = 15;
 export const alternativeSCP207DeathIndex = 16;
 export const scp330DeathIndex = 17;
+export const shrapnelIndex = 19;
+export const nearbyExplosionIndex = 20;
 export const scp096DeathIndex = 21;
 export const scp173DeathIndex = 22;
 export const scp939DeathIndex = 23;
@@ -115,10 +119,20 @@ export const lczDecontaminationIn30SecondsIndex = 22;
 export const detonationStartedIndex = 24;
 export const detonationResumedIndex = 26;
 
+export const categoriesFilePath = "/Categories.txt";
+
+export const microHIDIndex = 7;
+
+export const hotkeysFilePath = "/Hotkeys.txt";
+
+export const grenadeIndex = 7;
+
 export const scp049HUDFilePath = "/SCP049_HUD.txt";
 
+export const attackCooldownIndex = 7;
 export const reviveIndex = 21;
 export const holdKeyIndex = 22;
+export const denyFurtherRessurectionIndex = 9;
 
 export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 
@@ -128,6 +142,7 @@ export const itemsHeldCantBeUsedIndex = 2;
 export const pressKeyToCommunicateIndex = 3;
 export const alreadyDisguisedIndex = 5;
 export const unrecognisablePileOfBonesIndex = 7;
+export const roleDisguiseIndex = 8;
 export const disguiseIndex = 9;
 export const strangulationCooldownIndex = 10;
 export const removeDisguiseIndex = 15;
@@ -144,6 +159,17 @@ export const exitRageIndex = 7;
 export const scp939HUDFilePath = "/SCP939_HUD.txt";
 
 export const lungeIndex = 0;
+export const youveStolenTargetsVoiceIndex = 46;
+
+export const scp079HUDFilePath = "/SCP079_HUD.txt";
+
+export const zoomIndex = 0;
+export const scanResultIndex = 83;
+
+export const scp079FilePath = "/SCP079.txt";
+
+export const surveilanceMapIndex = 3;
+export const youAreBeingAttackedIndex = 13;
 
 export const textToRemove: { [filePath: string]: number[] } = {
     [deathReasonsFilePath]: [recontainedIndex, unknownCauseOfDeathIndex],
@@ -151,11 +177,12 @@ export const textToRemove: { [filePath: string]: number[] } = {
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
     [version7FilePath]: [youDiedIndex],
-    [scp049HUDFilePath]: [reviveIndex, holdKeyIndex],
-    [scp3114HUDFilePath]: [unableToAttackIndex, itemsHeldCantBeUsedIndex, pressKeyToCommunicateIndex, alreadyDisguisedIndex, disguiseIndex, strangulationCooldownIndex, removeDisguiseIndex],
+    [scp049HUDFilePath]: [attackCooldownIndex, reviveIndex, holdKeyIndex, denyFurtherRessurectionIndex],
+    [scp3114HUDFilePath]: [nowDisguisedAsIndex, unableToAttackIndex, itemsHeldCantBeUsedIndex, pressKeyToCommunicateIndex, alreadyDisguisedIndex, disguiseIndex, strangulationCooldownIndex, removeDisguiseIndex],
     [scp1507FilePath]: [vocaliseIndex],
     [scp096HUDFilePath]: [enterRageIndex, exitRageIndex],
-    [scp939HUDFilePath]: [lungeIndex]
+    [scp939HUDFilePath]: [lungeIndex, youveStolenTargetsVoiceIndex],
+    [scp079FilePath]: [surveilanceMapIndex, youAreBeingAttackedIndex]
 }
 
 export const linesToRemove: { [filePath: string]: [number, number[]] } = {
@@ -189,13 +216,20 @@ export const textToReplace: { [filePath: string]: [number, string][] } = {
     [inventoryGuiFilePath]: [[ammoCountIndex, "{0}/{1} {2}"], [totalIndex, "{0}"]],
     [subtitlesFilePath]: [[mtfEntryIndex, designationVariable + " - "], [scpSubjectsMultipleRemainingIndex, countVariable], [scpSubjectsSingleRemainingIndex, "1"], [scpIndex, scpVariable], [generatorsActivatedIndex, currentVariable + "/" + maximumVariable], [lczDecontaminationIn15MinutesIndex, "15"], [lczDecontaminationInTimeMinutesIndex, timeVariable], [lczDecontaminationIn1MinuteIndex, "1"], [lczDecontaminationIn30SecondsIndex, "0.5"], [detonationStartedIndex, timeVariable], [detonationResumedIndex, timeVariable]],
     [scp3114HUDFilePath]: [
-        [nowDisguisedAsIndex, roleNameVariable],
-        [unrecognisablePileOfBonesIndex, playerNameVariable]
+        [unrecognisablePileOfBonesIndex, playerNameVariable],
+        [roleDisguiseIndex, roleVariable]
+    ],
+    [scp079HUDFilePath]: [
+        [zoomIndex, "[amount]x"],
+        [scanResultIndex, "$[camera_name]$ ([zone]) - $[role]$"]
     ]
 }
 
 export const languageSpecificTextToReplace: { [filePath: string]: [number, string, number][] } = {
     [deathReasonsFilePath]: [
-        [detonatedByAlphaWarheadIndex, legacyInterfacesFilePath, legacyInterfacesAlphaWarheadIndex]
+        [detonatedByAlphaWarheadIndex, legacyInterfacesFilePath, legacyInterfacesAlphaWarheadIndex],
+        [severeElectricalBurnsIndex, categoriesFilePath, microHIDIndex],
+        [shrapnelIndex, hotkeysFilePath, grenadeIndex],
+        [nearbyExplosionIndex, hotkeysFilePath, grenadeIndex]
     ]
 }

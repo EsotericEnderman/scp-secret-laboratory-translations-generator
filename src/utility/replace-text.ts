@@ -7,7 +7,13 @@ export function replaceText() {
         for (const filePath in textToReplace) {
             const fullFilePath = folderPath + filePath;
 
-            const fileContent = readFileSync(fullFilePath).toString();
+            let fileContent: string;
+
+            try {
+                fileContent = readFileSync(fullFilePath).toString();
+            } catch (error) {
+                return;
+            }
 
             const lines = fileContent.split(newLineCharacter);
 

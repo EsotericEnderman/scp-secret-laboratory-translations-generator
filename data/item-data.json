@@ -1197,9 +1197,7 @@
             "Coarse": "Jailbird",
             "1:1": "3-X Particle Disruptor",
             "Fine": "Jailbird",
-            "Very Fine": {
-                "Item": "Micro H.I.D."
-            }
+            "Very Fine": "Micro H.I.D."
         }
     },
     "SCP-207?": {

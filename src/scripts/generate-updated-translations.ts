@@ -1,12 +1,12 @@
 import { translationsFolderPath } from "../constants.js";
-import { clearWorkDirectory } from "../utility/clear-work-directory.js";
-import { copyTranslationFolder } from "../utility/copy-translation-folder.js";
-import { importUpdatedTranslations } from "../utility/import-updated-translations.js";
-import { removeUnneededText } from "../utility/remove-unneeded-text.js";
-import { renameLanguageDirectories } from "../utility/rename-directories.js";
-import { replaceText } from "../utility/replace-text.js";
-import { updateItemTranslations } from "../utility/update-item-translations.js";
-import { updateLanguageManifests } from "../utility/update-language-manifests.js";
+import { clearWorkDirectory } from "../functions/clear-work-directory.js";
+import { copyTranslationFolder } from "../functions/copy-translation-folder.js";
+import { importUpdatedTranslations } from "../functions/import-updated-translations.js";
+import { removeUnneededText } from "../functions/remove-unneeded-text.js";
+import { renameLanguageDirectories } from "../functions/rename-directories.js";
+import { replaceText } from "../functions/replace-text.js";
+import { updateItemTranslations } from "../functions/update-item-translations.js";
+import { updateLanguageManifests } from "../functions/update-language-manifests.js";
 
 clearWorkDirectory();
 

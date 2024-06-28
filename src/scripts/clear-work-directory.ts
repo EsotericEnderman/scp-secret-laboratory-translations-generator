@@ -1,3 +1,3 @@
-import { clearWorkDirectory } from "../utility/clear-work-directory.js";
+import { clearWorkDirectory } from "../functions/clear-work-directory.js";
 
 clearWorkDirectory();

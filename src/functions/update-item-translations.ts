@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import { loopTranslationLanguages } from "./loop-translation-languages.js";
-import { getItemNameIdMap } from "./get-item-name-id-map.js";
-import { recipeToString } from "./recipe-to-string.js";
+import { getItemNameIdMap } from "../utility/get-item-name-id-map.js";
+import { recipeToString } from "../utility/recipe-to-string.js";
 import { itemsFilePath, newLineCharacter } from "../constants.js";
 
 export function updateItemTranslations() {

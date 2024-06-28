@@ -1,6 +1,7 @@
 import { translationsFolderPath } from "../constants.js";
 import { clearWorkDirectory } from "../functions/clear-work-directory.js";
 import { copyTranslationFolder } from "../functions/copy-translation-folder.js";
+import { decreaseGunAttributeTextSize } from "../functions/decrease-gun-attribute-text-size.js";
 import { importUpdatedTranslations } from "../functions/import-updated-translations.js";
 import { removeUnneededText } from "../functions/remove-unneeded-text.js";
 import { renameLanguageDirectories } from "../functions/rename-directories.js";
@@ -17,6 +18,8 @@ removeUnneededText();
 replaceText();
 
 updateItemTranslations();
+
+decreaseGunAttributeTextSize();
 
 updateLanguageManifests();
 

@@ -1,5 +1,11 @@
 import packageJson from "../package.json" with { type: "json" };
 
+// Miscelaneous constants
+
+export const inventoryGUIGunAttributeTextSize = {
+    "en": 5
+};
+
 // Author
 
 export const author = packageJson.author;
@@ -162,7 +168,15 @@ export const alternativeScp939DeathIndex = 32;
 export const inventoryGuiFilePath = "/InventoryGUI.txt"
 
 export const ammoCountIndex = 0;
+export const damageIndex = 1;
+export const fireRateIndex = 2;
+export const hipAccuracyIndex = 3;
+export const adsAccuracy = 4;
+export const staminaUsageIndex = 10;
+export const movementSpeedIndex = 11;
 export const totalIndex = 14;
+export const armorPenetrationIndex = 15;
+export const runningAccuracyIndex = 16;
 
 export const subtitlesFilePath = "/Subtitles.txt";
 

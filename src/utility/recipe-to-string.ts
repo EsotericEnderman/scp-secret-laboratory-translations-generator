@@ -1,4 +1,4 @@
-import { translationFilesNewLineCharacter } from "../constants.js";
+import { defaultLanguage, translationFilesNewLineCharacter } from "../constants.js";
 import { Item, MultipleSCP914Outputs, SCP914Output, SCP914Setting, isActionObject, isChanceObject, isCountObject, isItem, isItemObject } from "../types.js";
 import { getItemTranslation } from "./get-item-translation.js";
 import { getItemData } from "./get-item-data.js";
@@ -35,7 +35,9 @@ export function recipeToString(itemName: Item, languageFolderName: string) {
         output += translationFilesNewLineCharacter + "<color=yellow>" + settingOutput + "</color>";
     }
 
-    const descriptionTextSize = itemData.itemDescriptionTextSize;
+    const itemDescriptionTextSize = itemData.itemDescriptionTextSize;
+
+    const descriptionTextSize = itemDescriptionTextSize?.[languageFolderName] ?? itemDescriptionTextSize?.[defaultLanguage];
 
     return descriptionTextSize ? (`<size=${descriptionTextSize}>` + output + "</size>") : output;
 }

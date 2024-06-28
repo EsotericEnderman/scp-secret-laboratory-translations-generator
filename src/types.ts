@@ -124,7 +124,7 @@ export type SCP914Outputs = {
 }
 
 export type ItemData = {
-    itemDescriptionTextSize?: TextSize,
+    itemDescriptionTextSize?: {[langauge: string]: TextSize},
     scp914Outputs: SCP914Outputs
 }
 

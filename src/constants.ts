@@ -70,7 +70,7 @@ export const scp244 = "244";
 // Commonly used strings/words
 
 export const poisonDeath = scp1853 + space + plusSign + space + scp207;
-
+export const defaultLanguage = "en";
 export const updatedFolderPathEnding = "-updated";
 
 // File/folder paths and specific lines in folders

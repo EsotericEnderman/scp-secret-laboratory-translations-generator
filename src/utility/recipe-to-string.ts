@@ -29,15 +29,15 @@ export function recipeToString(itemName: string, languageFolderName: string) {
             settingOutput += handleSingle914Output(recipeOutput, languageFolderName);
         }
 
-        output += translationFilesNewLineCharacter + "<color=yellow>" + scp914Setting + "</color> - " + settingOutput;
+        output += translationFilesNewLineCharacter + "<color=yellow>" + settingOutput + "</color>";
     }
 
-    return output;
+    return "<size=3>" + output + "</size>";
 }
 
 function handleMultipleScp914Outputs(recipeOutput: SCP914MultipleRecipeOutputList, languageFolderName: string) {
     let output = "";
-    
+
     for (const element of recipeOutput) {
         if (Array.isArray(element)) {
             output += handleMultipleScp914Outputs(element, languageFolderName);

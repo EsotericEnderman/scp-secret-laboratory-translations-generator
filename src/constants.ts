@@ -1,3 +1,7 @@
+import packageJson from "../package.json" with { type: "json" };
+
+export const author = packageJson.author;
+
 export const newLineCharacter = "\r\n";
 export const translationFilesNewLineCharacter = "\\n";
 export const invisibleCharacter = "ㅤ"
@@ -54,12 +58,16 @@ export const scp244 = "244";
 
 export const poisonDeath = scp1853 + space + plusSign + space + scp207;
 
-export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/Translations";
+export const translations = "Translations";
+
+export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/common/SCP Secret Laboratory/" + translations;
 
 export const workDirectoryPath = "work";
 export const dataFolderPath = "data";
-export const translationsOutputPath = workDirectoryPath + "/Translations";
+export const translationsOutputPath = workDirectoryPath + slash + translations;
 export const scp914RecipesFilePath = dataFolderPath + "/scp-914-recipes.json";
+
+export const updatedFolderPathEnding = "-updated";
 
 export const itemsFilePath = "/Items.txt";
 
@@ -146,6 +154,7 @@ export const scpSubjectsMultipleRemainingIndex = 1;
 export const scpSubjectsSingleRemainingIndex = 2;
 export const scpIndex = 11;
 export const generatorsActivatedIndex = 15;
+export const allGeneratorsActivatedIndex = 16;
 export const lczDecontaminationIn15MinutesIndex = 19;
 export const lczDecontaminationInTimeMinutesIndex = 20;
 export const lczDecontaminationIn1MinuteIndex = 21;
@@ -216,7 +225,8 @@ export const textToRemove: { [filePath: string]: number[] } = {
     [scp1507FilePath]: [vocaliseIndex],
     [scp096HUDFilePath]: [enterRageIndex, exitRageIndex],
     [scp939HUDFilePath]: [lungeIndex, youveStolenTargetsVoiceIndex],
-    [scp079FilePath]: [surveilanceMapIndex, youAreBeingAttackedIndex]
+    [scp079FilePath]: [surveilanceMapIndex, youAreBeingAttackedIndex],
+    [subtitlesFilePath]: [allGeneratorsActivatedIndex]
 }
 
 export const linesToRemove: { [filePath: string]: [number, number[]] } = {

@@ -4,7 +4,7 @@ import { getItemNameIdMap } from "./get-item-name-id-map.js";
 import { invertMap } from "./invert-map.js";
 
 export function getItemTranslation(itemName: string, languageFolderName: string) {
-    const itemsFile = readFileSync(translationsFolderPath + "\\" + languageFolderName + itemsFilePath).toString();
+    const itemsFile = readFileSync(translationsFolderPath + "/" + languageFolderName + itemsFilePath).toString();
 
     const map = getItemNameIdMap();
     const invertedMap = invertMap(map);

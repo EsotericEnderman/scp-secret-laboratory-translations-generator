@@ -1,9 +1,9 @@
 import { readFileSync } from "fs";
-import { itemsFilePath, newLineCharacter, splitCharacter, translationsFolderPath } from "../constants.js";
+import { defaultLanguage, itemsFilePath, newLineCharacter, splitCharacter, translationsFolderPath } from "../constants.js";
 import { Item } from "../types.js";
 
 export function getItemNameIdMap(): Map<number, Item> {
-    const itemsFileFullPath = translationsFolderPath + "/en/" + itemsFilePath;
+    const itemsFileFullPath = translationsFolderPath + defaultLanguage + itemsFilePath;
 
     const fileContents = readFileSync(itemsFileFullPath).toString();
 

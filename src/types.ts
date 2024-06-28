@@ -4,6 +4,7 @@ import { objectIncludeValue as objectIncludesValue } from "./utility/object-incl
 
 type Chance = number;
 type Count = number;
+type TextSize = number;
 
 // Enums
 
@@ -123,6 +124,7 @@ export type SCP914Outputs = {
 }
 
 export type ItemData = {
+    itemDescriptionTextSize?: TextSize,
     scp914Outputs: SCP914Outputs
 }
 

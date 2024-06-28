@@ -6,7 +6,8 @@ import { getItemData } from "./get-item-data.js";
 export function recipeToString(itemName: Item, languageFolderName: string) {
     let output = "";
 
-    const recipe = getItemData(itemName)?.scp914Outputs;
+    const itemData = getItemData(itemName);
+    const recipe = itemData?.scp914Outputs;
 
     if (!recipe) {
         console.log("Item '" + itemName + "' has no defined SCP-914 recipes.");
@@ -34,7 +35,9 @@ export function recipeToString(itemName: Item, languageFolderName: string) {
         output += translationFilesNewLineCharacter + "<color=yellow>" + settingOutput + "</color>";
     }
 
-    return "<size=3>" + output + "</size>";
+    const descriptionTextSize = itemData.itemDescriptionTextSize;
+
+    return descriptionTextSize ? (`<size=${descriptionTextSize}>` + output + "</size>") : output;
 }
 
 function handleMultipleScp914Outputs(recipeOutput: MultipleSCP914Outputs, languageFolderName: string) {

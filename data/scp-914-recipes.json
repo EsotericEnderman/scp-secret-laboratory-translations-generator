@@ -412,7 +412,13 @@
     },
     "Micro H.I.D.": {
         "Rough": "MTF-E11-SR",
-        "Coarse / 1:1 / Fine": {
+        "Coarse": {
+            "Action": "Recharges the Micro H.I.D."
+        },
+        "1:1": {
+            "Action": "Recharges the Micro H.I.D."
+        },
+        "Fine": {
             "Action": "Recharges the Micro H.I.D."
         },
         "Very Fine": [

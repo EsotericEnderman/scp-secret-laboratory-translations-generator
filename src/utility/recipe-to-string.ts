@@ -1,13 +1,12 @@
 import { translationFilesNewLineCharacter } from "../constants.js";
-import { Item, ItemDataFile, MultipleSCP914Outputs, SCP914Output, SCP914Setting, isActionObject, isChanceObject, isCountObject, isItem, isItemObject } from "../types.js";
+import { Item, MultipleSCP914Outputs, SCP914Output, SCP914Setting, isActionObject, isChanceObject, isCountObject, isItem, isItemObject } from "../types.js";
 import { getItemTranslation } from "./get-item-translation.js";
-import itemDataFile from "../../data/item-data.json" with { type: "json" };
-const typedItemDataFile = itemDataFile as ItemDataFile;
+import { getItemData } from "./get-item-data.js";
 
 export function recipeToString(itemName: Item, languageFolderName: string) {
     let output = "";
 
-    const recipe = typedItemDataFile[itemName]?.scp914Outputs;
+    const recipe = getItemData(itemName)?.scp914Outputs;
 
     if (!recipe) {
         console.log("Item '" + itemName + "' has no defined SCP-914 recipes.");

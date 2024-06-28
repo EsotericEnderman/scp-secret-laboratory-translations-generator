@@ -1,6 +1,10 @@
 import packageJson from "../package.json" with { type: "json" };
 
+// Author
+
 export const author = packageJson.author;
+
+// Commonly used characters
 
 export const newLineCharacter = "\r\n";
 export const translationFilesNewLineCharacter = "\\n";
@@ -15,13 +19,16 @@ export const dollarSign = "$";
 export const slash = "/";
 export const leftBracket = "(";
 export const rightBracket = ")";
-
 export const leftCurvyBracket = "{";
 export const rightCurvyBracket = "}";
+
+// Formatting functions
 
 export function indexedVariable(index: number) {
     return leftCurvyBracket + index.toString() + rightCurvyBracket;
 }
+
+// Variables used in the translation folders
 
 export const playerVariable = "[player]";
 export const userVariable = "[user]";
@@ -43,6 +50,8 @@ export const cameraNameVariable = "[camera_name]";
 export const zoneVariable = "[zone]";
 export const zoomAmountVariable = "[amount]";
 
+// What to rename the SCPs to
+
 export const scp049 = "49";
 export const scp049_2 = "49-2";
 export const scp096 = "96";
@@ -56,7 +65,13 @@ export const scp1853 = "1853";
 export const scp330 = "330";
 export const scp244 = "244";
 
+// Commonly used strings/words
+
 export const poisonDeath = scp1853 + space + plusSign + space + scp207;
+
+export const updatedFolderPathEnding = "-updated";
+
+// File/folder paths and specific lines in folders
 
 export const translations = "Translations";
 
@@ -65,9 +80,9 @@ export const translationsFolderPath = "C:/Program Files (x86)/Steam/steamapps/co
 export const workDirectoryPath = "work";
 export const dataFolderPath = "data";
 export const translationsOutputPath = workDirectoryPath + slash + translations;
-export const scp914RecipesFilePath = dataFolderPath + "/scp-914-recipes.json";
+export const itemDataFilePath = dataFolderPath + "/scp-914-recipes.json";
 
-export const updatedFolderPathEnding = "-updated";
+// Translation file paths
 
 export const itemsFilePath = "/Items.txt";
 
@@ -213,6 +228,8 @@ export const scp079FilePath = "/SCP079.txt";
 
 export const surveilanceMapIndex = 3;
 export const youAreBeingAttackedIndex = 13;
+
+// Information about text to change/remove
 
 export const textToRemove: { [filePath: string]: number[] } = {
     [deathReasonsFilePath]: [recontainedIndex, unknownCauseOfDeathIndex],

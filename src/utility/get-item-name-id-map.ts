@@ -3,7 +3,7 @@ import { defaultLanguage, itemsFilePath, newLineCharacter, splitCharacter, trans
 import { Item } from "../types.js";
 
 export function getItemNameIdMap(): Map<number, Item> {
-    const itemsFileFullPath = translationsFolderPath + defaultLanguage + itemsFilePath;
+    const itemsFileFullPath = translationsFolderPath + "/" + defaultLanguage + itemsFilePath;
 
     const fileContents = readFileSync(itemsFileFullPath).toString();
 

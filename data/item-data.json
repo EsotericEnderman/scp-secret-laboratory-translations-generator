@@ -326,6 +326,9 @@
         }
     },
     "Radio": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"
@@ -348,6 +351,9 @@
         }
     },
     "COM-15": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -390,6 +396,9 @@
         }
     },
     "First Aid Kit": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"
@@ -414,6 +423,9 @@
         }
     },
     "Flashlight": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"
@@ -443,6 +455,9 @@
         }
     },
     "Micro H.I.D.": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": "MTF-E11-SR",
             "Coarse": {
@@ -467,6 +482,9 @@
         }
     },
     "SCP-500": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -516,6 +534,9 @@
         }
     },
     "MTF-E11-SR": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -558,6 +579,9 @@
         }
     },
     "Crossvec": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -606,6 +630,9 @@
         }
     },
     "FSP-9": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -646,6 +673,9 @@
         }
     },
     "Logicer": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -689,6 +719,9 @@
         }
     },
     "High-Explosive Grenade": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"
@@ -713,6 +746,9 @@
         }
     },
     "Flashbang Grenade": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"
@@ -760,6 +796,9 @@
         }
     },
     "COM-18": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -810,6 +849,9 @@
         }
     },
     "Adrenaline": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -846,6 +888,9 @@
         }
     },
     "Painkillers": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"
@@ -895,6 +940,9 @@
         }
     },
     "Light Armor": {
+        "itemDescriptionTextSize": {
+            "en": 5
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -922,6 +970,9 @@
         }
     },
     "Combat Armor": {
+        "itemDescriptionTextSize": {
+            "en": 5
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -940,6 +991,9 @@
         }
     },
     "Heavy Armor": {
+        "itemDescriptionTextSize": {
+            "en": 5
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -958,6 +1012,9 @@
         }
     },
     ".44 Revolver": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -1003,6 +1060,9 @@
         }
     },
     "AK": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -1054,6 +1114,9 @@
         }
     },
     "Shotgun": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -1134,6 +1197,9 @@
         }
     },
     "SCP-1853": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": "Painkillers",
             "Coarse": "Adrenaline",
@@ -1152,6 +1218,9 @@
         }
     },
     "3-X Particle Disruptor": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": "Flashlight",
             "Coarse": "MTF-E11-SR",
@@ -1163,6 +1232,9 @@
         }
     },
     "COM-45": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -1225,6 +1297,9 @@
         }
     },
     "FR-MG-0": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -1258,6 +1333,9 @@
         }
     },
     "A7": {
+        "itemDescriptionTextSize": {
+            "en": 10
+        },
         "scp914Outputs": {
             "Rough": [
                 {
@@ -1282,6 +1360,9 @@
         }
     },
     "Lantern": {
+        "itemDescriptionTextSize": {
+            "en": 15
+        },
         "scp914Outputs": {
             "Rough": {
                 "action": "Destroys the item"

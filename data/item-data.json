@@ -1,36 +1,36 @@
 {
     "Janitor Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "1:1": "Zone Manager Keycard",
             "Fine": "Scientist Keycard",
             "Very Fine": [
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.5
+                    "item": "Scientist Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Research Supervisor Keycard",
-                    "Chance": 0.5
+                    "item": "Research Supervisor Keycard",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "Scientist Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Janitor Keycard",
-                    "Chance": 0.5
+                    "item": "Janitor Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Janitor Keycard",
@@ -38,30 +38,30 @@
             "Fine": "Research Supervisor Keycard",
             "Very Fine": [
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.333333343
+                    "item": "Scientist Keycard",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "Research Supervisor Keycard",
-                    "Chance": 0.333333343
+                    "item": "Research Supervisor Keycard",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "Facility Manager Keycard",
-                    "Chance": 0.333333343
+                    "item": "Facility Manager Keycard",
+                    "chance": 0.333333343
                 }
             ]
         }
     },
     "Research Supervisor Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Janitor Keycard",
-                    "Chance": 0.5
+                    "item": "Janitor Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.5
+                    "item": "Scientist Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Scientist Keycard",
@@ -69,26 +69,26 @@
             "Fine": "Facility Manager Keycard",
             "Very Fine": [
                 {
-                    "Item": "Research Supervisor Keycard",
-                    "Chance": 0.5
+                    "item": "Research Supervisor Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Facility Manager Keycard",
-                    "Chance": 0.5
+                    "item": "Facility Manager Keycard",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "Zone Manager Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Janitor Keycard",
-                    "Chance": 0.5
+                    "item": "Janitor Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.5
+                    "item": "Scientist Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Scientist Keycard",
@@ -96,30 +96,30 @@
             "Fine": "Facility Manager Keycard",
             "Very Fine": [
                 {
-                    "Item": "Facility Manager Keycard",
-                    "Chance": 0.4
+                    "item": "Facility Manager Keycard",
+                    "chance": 0.4
                 },
                 {
-                    "Item": "Zone Manager Keycard",
-                    "Chance": 0.4
+                    "item": "Zone Manager Keycard",
+                    "chance": 0.4
                 },
                 {
-                    "Item": "Chaos Insurgency Access Device",
-                    "Chance": 0.2
+                    "item": "Chaos Insurgency Access Device",
+                    "chance": 0.2
                 }
             ]
         }
     },
     "Guard Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Janitor Keycard",
-                    "Chance": 0.5
+                    "item": "Janitor Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.5
+                    "item": "Scientist Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Scientist Keycard",
@@ -127,30 +127,30 @@
             "Fine": "MTF Operative Keycard",
             "Very Fine": [
                 {
-                    "Item": "Guard Keycard",
-                    "Chance": 0.333333343
+                    "item": "Guard Keycard",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "MTF Operative Keycard",
-                    "Chance": 0.333333343
+                    "item": "MTF Operative Keycard",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "MTF Captain Keycard",
-                    "Chance": 0.333333343
+                    "item": "MTF Captain Keycard",
+                    "chance": 0.333333343
                 }
             ]
         }
     },
     "MTF Private Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.5
+                    "item": "Scientist Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Research Supervisor Keycard",
-                    "Chance": 0.5
+                    "item": "Research Supervisor Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Research Supervisor Keycard",
@@ -158,62 +158,62 @@
             "Fine": "MTF Operative Keycard",
             "Very Fine": [
                 {
-                    "Item": "MTF Operative Keycard",
-                    "Chance": 0.5
+                    "item": "MTF Operative Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "MTF Captain Keycard",
-                    "Chance": 0.5
+                    "item": "MTF Captain Keycard",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "Containment Engineer Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Scientist Keycard",
-                    "Chance": 0.5
+                    "item": "Scientist Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Research Supervisor Keycard",
-                    "Chance": 0.5
+                    "item": "Research Supervisor Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Research Supervisor Keycard",
             "1:1": "Facility Manager Keycard",
             "Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.5
+                    "item": "O5-level Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "MTF Captain Keycard",
-                    "Chance": 0.5
+                    "item": "MTF Captain Keycard",
+                    "chance": 0.5
                 }
             ],
             "Very Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.6666667
+                    "item": "O5-level Keycard",
+                    "chance": 0.6666667
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.333333343
+                    "action": "Destroys the item",
+                    "chance": 0.333333343
                 }
             ]
         }
     },
     "MTF Operative Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Guard Keycard",
-                    "Chance": 0.5
+                    "item": "Guard Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "MTF Private Keycard",
-                    "Chance": 0.5
+                    "item": "MTF Private Keycard",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "MTF Private Keycard",
@@ -221,561 +221,576 @@
             "Fine": "MTF Captain Keycard",
             "Very Fine": [
                 {
-                    "Item": "MTF Captain Keycard",
-                    "Chance": 0.333333343
+                    "item": "MTF Captain Keycard",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.333333343
+                    "item": "O5-level Keycard",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "MTF Operative Keycard",
-                    "Chance": 0.333333343
+                    "item": "MTF Operative Keycard",
+                    "chance": 0.333333343
                 }
             ]
         }
     },
     "MTF Captain Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Guard Keycard",
             "Coarse": "MTF Operative Keycard",
             "1:1": "Chaos Insurgency Access Device",
             "Fine": "O5-level Keycard",
             "Very Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.75
+                    "item": "O5-level Keycard",
+                    "chance": 0.75
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.25
+                    "action": "Destroys the item",
+                    "chance": 0.25
                 }
             ]
         }
     },
     "Facility Manager Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Zone Manager Keycard",
             "Coarse": "MTF Captain Keycard",
             "1:1": "Chaos Insurgency Access Device",
             "Fine": "O5-level Keycard",
             "Very Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.75
+                    "item": "O5-level Keycard",
+                    "chance": 0.75
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.25
+                    "action": "Destroys the item",
+                    "chance": 0.25
                 }
             ]
         }
     },
     "Chaos Insurgency Access Device": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Guard Keycard",
             "Coarse": "MTF Operative Keycard",
             "1:1": "MTF Captain Keycard",
             "Fine": "O5-level Keycard",
             "Very Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.75
+                    "item": "O5-level Keycard",
+                    "chance": 0.75
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.25
+                    "action": "Destroys the item",
+                    "chance": 0.25
                 }
             ]
         }
     },
     "O5-level Keycard": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Guard Keycard",
             "Coarse": [
                 {
-                    "Item": "Facility Manager Keycard",
-                    "Chance": 0.5
+                    "item": "Facility Manager Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "MTF Captain Keycard",
-                    "Chance": 0.5
+                    "item": "MTF Captain Keycard",
+                    "chance": 0.5
                 }
             ],
             "1:1": "O5-level Keycard",
             "Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.5
+                    "item": "O5-level Keycard",
+                    "chance": 0.5
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 }
             ],
             "Very Fine": [
                 {
-                    "Item": "O5-level Keycard",
-                    "Chance": 0.25
+                    "item": "O5-level Keycard",
+                    "chance": 0.25
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.75
+                    "action": "Destroys the item",
+                    "chance": 0.75
                 }
             ]
         }
     },
     "Radio": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "1:1": "Radio",
             "Fine": "Radio",
             "Very Fine": [
                 {
-                    "Item": "Flashlight",
-                    "Chance": 0.75
+                    "item": "Flashlight",
+                    "chance": 0.75
                 },
                 {
-                    "Item": "SCP-1576",
-                    "Chance": 0.25
+                    "item": "SCP-1576",
+                    "chance": 0.25
                 }
             ]
         }
     },
     "COM-15": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "chance": 0.5
                 }
             ],
             "Coarse": [
                 {
-                    "Item": "COM-15",
-                    "Chance": 0.5
+                    "item": "COM-15",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "chance": 0.5
                 }
             ],
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "COM-18",
             "Very Fine": [
                 {
-                    "Item": ".44 Revolver",
-                    "Chance": 0.295
+                    "item": ".44 Revolver",
+                    "chance": 0.295
                 },
                 {
-                    "Item": "FSP-9",
-                    "Chance": 0.555
+                    "item": "FSP-9",
+                    "chance": 0.555
                 },
                 {
-                    "Item": "COM-45",
-                    "Chance": 0.15
+                    "item": "COM-45",
+                    "chance": 0.15
                 }
             ]
         }
     },
     "First Aid Kit": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "Painkillers",
             "1:1": "First Aid Kit",
             "Fine": "Adrenaline",
             "Very Fine": [
                 {
-                    "Item": "First Aid Kit",
-                    "Chance": 0.333333343
+                    "item": "First Aid Kit",
+                    "chance": 0.333333343
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.333333343
+                    "action": "Destroys the item",
+                    "chance": 0.333333343
                 },
                 {
-                    "Item": "SCP-500",
-                    "Chance": 0.333333343
+                    "item": "SCP-500",
+                    "chance": 0.333333343
                 }
             ]
         }
     },
     "Flashlight": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": [
                 {
-                    "Item": "Flashlight",
-                    "Chance": 0.5
+                    "item": "Flashlight",
+                    "chance": 0.5
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 }
             ],
             "1:1": "Flashlight",
             "Fine": "Radio",
             "Very Fine": [
                 {
-                    "Item": "Flashbang Grenade",
-                    "Chance": 0.9
+                    "item": "Flashbang Grenade",
+                    "chance": 0.9
                 },
                 {
-                    "Item": "SCP-2176",
-                    "Chance": 0.1
+                    "item": "SCP-2176",
+                    "chance": 0.1
                 }
             ]
         }
     },
     "Micro H.I.D.": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "MTF-E11-SR",
             "Coarse": {
-                "Action": "Recharges the Micro H.I.D."
+                "action": "Recharges"
             },
             "1:1": {
-                "Action": "Recharges the Micro H.I.D."
+                "action": "Recharges"
             },
             "Fine": {
-                "Action": "Recharges the Micro H.I.D."
+                "action": "Recharges"
             },
             "Very Fine": [
                 {
-                    "Item": "3-X Particle Disruptor",
-                    "Chance": 0.5
+                    "item": "3-X Particle Disruptor",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Jailbird",
-                    "Chance": 0.5
+                    "item": "Jailbird",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "SCP-500": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Painkillers",
-                    "Chance": 0.5
+                    "item": "Painkillers",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "First Aid Kit",
-                    "Chance": 0.5
+                    "item": "First Aid Kit",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Adrenaline",
             "1:1": "SCP-500",
             "Fine": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "SCP-500",
-                    "Chance": 0.5
+                    "item": "SCP-500",
+                    "chance": 0.5
                 }
             ],
             "Very Fine": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             }
         }
     },
     "SCP-207": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Painkillers",
             "Coarse": "Adrenaline",
             "1:1": "SCP-207?",
             "Fine": "SCP-1853",
             "Very Fine": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             }
         }
     },
     "12/7 Buckshot Ammo": {
-        "Info": "Only works on dropped items regardless of 914mode!",
-        "Rough / Coarse": "7.62x39mm Ammo",
-        "1:1": "9x19mm Ammo",
-        "Fine / Very Fine": ".44mag Ammo"
+        "scp914Outputs": {
+            "Rough": "7.62x39mm Ammo",
+            "Coarse": "7.62x39mm Ammo",
+            "1:1": "9x19mm Ammo",
+            "Fine": ".44mag Ammo",
+            "Very Fine": ".44mag Ammo"
+        }
     },
     "MTF-E11-SR": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "COM-15",
-                    "Chance": 0.5
+                    "item": "COM-15",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "5.56x45mm Ammo",
-                    "Count": 2,
-                    "Chance": 0.5
+                    "item": "5.56x45mm Ammo",
+                    "count": 2,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Crossvec",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "AK",
             "Very Fine": [
                 {
-                    "Item": "Micro H.I.D.",
-                    "Chance": 0.05
+                    "item": "Micro H.I.D.",
+                    "chance": 0.05
                 },
                 {
-                    "Item": "Logicer",
-                    "Chance": 0.25
+                    "item": "Logicer",
+                    "chance": 0.25
                 },
                 {
-                    "Item": "Shotgun",
-                    "Chance": 0.1
+                    "item": "Shotgun",
+                    "chance": 0.1
                 },
                 {
-                    "Item": "AK",
-                    "Chance": 0.3
+                    "item": "AK",
+                    "chance": 0.3
                 },
                 {
-                    "Item": "Crossvec",
-                    "Chance": 0.3
+                    "item": "Crossvec",
+                    "chance": 0.3
                 }
             ]
         }
     },
     "Crossvec": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Count": 4,
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "count": 4,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "FSP-9",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": [
                 {
-                    "Item": "MTF-E11-SR",
-                    "Chance": 0.6
+                    "item": "MTF-E11-SR",
+                    "chance": 0.6
                 },
                 {
-                    "Item": "AK",
-                    "Chance": 0.4
+                    "item": "AK",
+                    "chance": 0.4
                 }
             ],
             "Very Fine": [
                 {
-                    "Item": "Shotgun",
-                    "Chance": 0.3
+                    "item": "Shotgun",
+                    "chance": 0.3
                 },
                 {
-                    "Item": "MTF-E11-SR",
-                    "Chance": 0.7
+                    "item": "MTF-E11-SR",
+                    "chance": 0.7
                 }
             ]
         }
     },
     "5.56x45mm Ammo": {
-        "Info": "Only works on dropped items regardless of 914mode!",
-        "Rough / Coarse": "9x19mm Ammo",
-        "1:1": "7.62x39mm Ammo",
-        "Fine / Very Fine": "9x19mm Ammo"
+        "scp914Outputs": {
+            "Rough": "9x19mm Ammo",
+            "Coarse": "9x19mm Ammo",
+            "1:1": "7.62x39mm Ammo",
+            "Fine": "9x19mm Ammo",
+            "Very Fine": "9x19mm Ammo"
+        }
     },
     "FSP-9": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Count": 3,
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "count": 3,
+                    "chance": 0.5
                 }
             ],
             "Coarse": [
                 {
-                    "Item": "COM-18",
-                    "Chance": 0.5
+                    "item": "COM-18",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Count": 2,
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "count": 2,
+                    "chance": 0.5
                 }
             ],
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "Crossvec",
             "Very Fine": [
                 {
-                    "Item": "Crossvec",
-                    "Chance": 0.7
+                    "item": "Crossvec",
+                    "chance": 0.7
                 },
                 {
-                    "Item": "MTF-E11-SR",
-                    "Chance": 0.3
+                    "item": "MTF-E11-SR",
+                    "chance": 0.3
                 }
             ]
         }
     },
     "Logicer": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "AK",
-                    "Chance": 0.5
+                    "item": "AK",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "7.62x39mm Ammo",
-                    "Count": 4,
-                    "Chance": 0.5
+                    "item": "7.62x39mm Ammo",
+                    "count": 4,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "FR-MG-0",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "Shotgun",
             "Very Fine": [
                 {
-                    "Item": "Micro H.I.D.",
-                    "Chance": 0.1
+                    "item": "Micro H.I.D.",
+                    "chance": 0.1
                 },
                 {
-                    "Outputs": [
+                    "outputs": [
                         "AK",
                         {
-                            "Item": "High-Explosive Grenade",
-                            "Count": 2
+                            "item": "High-Explosive Grenade",
+                            "count": 2
                         }
                     ],
-                    "Chance": 0.6
+                    "chance": 0.6
                 },
                 {
-                    "Outputs": [
+                    "outputs": [
                         ".44 Revolver",
                         "Shotgun"
                     ],
-                    "Chance": 0.3
+                    "chance": 0.3
                 }
             ]
         }
     },
     "High-Explosive Grenade": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "Flashbang Grenade",
             "1:1": "Flashbang Grenade",
             "Fine": "High-Explosive Grenade",
             "Very Fine": [
                 {
-                    "Item": "High-Explosive Grenade",
-                    "Chance": 0.25
+                    "item": "High-Explosive Grenade",
+                    "chance": 0.25
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "SCP-018",
-                    "Chance": 0.25
+                    "item": "SCP-018",
+                    "chance": 0.25
                 }
             ]
         }
     },
     "Flashbang Grenade": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "Flashlight",
             "1:1": "High-Explosive Grenade",
             "Fine": "High-Explosive Grenade",
             "Very Fine": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.75
+                    "action": "Destroys the item",
+                    "chance": 0.75
                 },
                 {
-                    "Item": "SCP-207",
-                    "Chance": 0.25
+                    "item": "SCP-207",
+                    "chance": 0.25
                 }
             ]
         }
     },
     ".44mag Ammo": {
-        "Info": "Only works on dropped items regardless of 914mode!",
-        "Rough / Coarse": "12/7 Buckshot Ammo",
-        "1:1": "9x19mm Ammo",
-        "Fine / Very Fine": "7.62x39mm Ammo"
+        "scp914Outputs": {
+            "Rough": "12/7 Buckshot Ammo",
+            "Coarse": "12/7 Buckshot Ammo",
+            "1:1": "9x19mm Ammo",
+            "Fine": "7.62x39mm Ammo",
+            "Very Fine": "7.62x39mm Ammo"
+        }
     },
     "7.62x39mm Ammo": {
-        "Info": "Only works on dropped items regardless of 914mode!",
-        "Rough / Coarse": ".44mag Ammo",
-        "1:1": "5.56x45mm Ammo",
-        "Fine / Very Fine": "12/7 Buckshot Ammo"
+        "scp914Outputs": {
+            "Rough": ".44mag Ammo",
+            "Coarse": ".44mag Ammo",
+            "1:1": "5.56x45mm Ammo",
+            "Fine": "12/7 Buckshot Ammo",
+            "Very Fine": "12/7 Buckshot Ammo"
+        }
     },
     "9x19mm Ammo": {
-        "Info": "Only works on dropped items regardless of 914mode!",
-        "Rough / Coarse": "5.56x45mm Ammo",
-        "1:1": ".44mag Ammo",
-        "Fine / Very Fine": "5.56x45mm Ammo"
+        "scp914Outputs": {
+            "Rough": "5.56x45mm Ammo",
+            "Coarse": "5.56x45mm Ammo",
+            "1:1": ".44mag Ammo",
+            "Fine": "5.56x45mm Ammo",
+            "Very Fine": "5.56x45mm Ammo"
+        }
     },
     "COM-18": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "9x19mm Ammo",
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Count": 2,
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "count": 2,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "COM-15",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "FSP-9",
             "Very Fine": [
                 {
-                    "Item": ".44 Revolver",
-                    "Chance": 0.45
+                    "item": ".44 Revolver",
+                    "chance": 0.45
                 },
                 {
-                    "Item": "Crossvec",
-                    "Chance": 0.55
+                    "item": "Crossvec",
+                    "chance": 0.55
                 }
             ]
         }
     },
     "SCP-018": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Flashbang Grenade",
             "Coarse": "Flashbang Grenade",
             "1:1": "SCP-018",
@@ -784,9 +799,9 @@
         }
     },
     "SCP-268": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "SCP-268",
             "1:1": "SCP-268",
@@ -795,83 +810,83 @@
         }
     },
     "Adrenaline": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Painkillers",
-                    "Chance": 0.5
+                    "item": "Painkillers",
+                    "chance": 0.5
                 }
             ],
             "Coarse": [
                 {
-                    "Item": "First Aid Kit",
-                    "Chance": 0.5
+                    "item": "First Aid Kit",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Painkillers",
-                    "Chance": 0.5
+                    "item": "Painkillers",
+                    "chance": 0.5
                 }
             ],
             "1:1": "Painkillers",
             "Fine": "SCP-500",
             "Very Fine": [
                 {
-                    "Item": "Painkillers",
-                    "Chance": 0.6666667
+                    "item": "Painkillers",
+                    "chance": 0.6666667
                 },
                 {
-                    "Item": "SCP-500",
-                    "Chance": 0.333333343
+                    "item": "SCP-500",
+                    "chance": 0.333333343
                 }
             ]
         }
     },
     "Painkillers": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": [
                 {
-                    "Item": "Painkillers",
-                    "Chance": 0.5
+                    "item": "Painkillers",
+                    "chance": 0.5
                 },
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 }
             ],
             "1:1": [
                 {
-                    "Item": "First Aid Kit",
-                    "Chance": 0.5
+                    "item": "First Aid Kit",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Painkillers",
-                    "Chance": 0.5
+                    "item": "Painkillers",
+                    "chance": 0.5
                 }
             ],
             "Fine": "First Aid Kit",
             "Very Fine": [
                 {
-                    "Item": "First Aid Kit",
-                    "Chance": 0.5
+                    "item": "First Aid Kit",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Adrenaline",
-                    "Chance": 0.5
+                    "item": "Adrenaline",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "Coin": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "Coin",
             "1:1": "Coin",
@@ -880,15 +895,15 @@
         }
     },
     "Light Armor": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Radio",
-                    "Chance": 0.5
+                    "item": "Radio",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Flashlight",
@@ -896,26 +911,26 @@
             "Fine": "Combat Armor",
             "Very Fine": [
                 {
-                    "Item": "Combat Armor",
-                    "Chance": 0.5
+                    "item": "Combat Armor",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Heavy Armor",
-                    "Chance": 0.5
+                    "item": "Heavy Armor",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "Combat Armor": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Light Armor",
-                    "Chance": 0.5
+                    "item": "Light Armor",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Flashlight",
-                    "Chance": 0.5
+                    "item": "Flashlight",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Light Armor",
@@ -925,15 +940,15 @@
         }
     },
     "Heavy Armor": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "Combat Armor",
-                    "Chance": 0.5
+                    "item": "Combat Armor",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Light Armor",
-                    "Chance": 0.5
+                    "item": "Light Armor",
+                    "chance": 0.5
                 }
             ],
             "Coarse": "Combat Armor",
@@ -943,163 +958,163 @@
         }
     },
     ".44 Revolver": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": ".44mag Ammo",
-                    "Count": 2,
-                    "Chance": 0.5
+                    "item": ".44mag Ammo",
+                    "count": 2,
+                    "chance": 0.5
                 }
             ],
             "Coarse": [
                 {
-                    "Item": "COM-18",
-                    "Chance": 0.8
+                    "item": "COM-18",
+                    "chance": 0.8
                 },
                 {
-                    "Item": "High-Explosive Grenade",
-                    "Chance": 0.2
+                    "item": "High-Explosive Grenade",
+                    "chance": 0.2
                 }
             ],
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "Crossvec",
             "Very Fine": [
                 {
-                    "Item": "High-Explosive Grenade",
-                    "Count": 2,
-                    "Chance": 0.5
+                    "item": "High-Explosive Grenade",
+                    "count": 2,
+                    "chance": 0.5
                 },
                 {
-                    "Outputs": [
+                    "outputs": [
                         "Zone Manager Keycard",
                         "COM-15",
                         "Painkillers",
                         "First Aid Kit"
                     ],
-                    "Chance": 0.5
+                    "chance": 0.5
                 }
             ]
         }
     },
     "AK": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "COM-15",
-                    "Chance": 0.5
+                    "item": "COM-15",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "7.62x39mm Ammo",
-                    "Count": 3,
-                    "Chance": 0.5
+                    "item": "7.62x39mm Ammo",
+                    "count": 3,
+                    "chance": 0.5
                 }
             ],
             "Coarse": [
                 {
-                    "Item": "Crossvec",
-                    "Chance": 0.5
+                    "item": "Crossvec",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "A7",
-                    "Chance": 0.5
+                    "item": "A7",
+                    "chance": 0.5
                 }
             ],
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "MTF-E11-SR",
             "Very Fine": [
                 {
-                    "Item": "Micro H.I.D.",
-                    "Chance": 0.05
+                    "item": "Micro H.I.D.",
+                    "chance": 0.05
                 },
                 {
-                    "Item": "Logicer",
-                    "Chance": 0.25
+                    "item": "Logicer",
+                    "chance": 0.25
                 },
                 {
-                    "Item": "Shotgun",
-                    "Chance": 0.1
+                    "item": "Shotgun",
+                    "chance": 0.1
                 },
                 {
-                    "Item": "MTF-E11-SR",
-                    "Chance": 0.3
+                    "item": "MTF-E11-SR",
+                    "chance": 0.3
                 },
                 {
-                    "Item": "Crossvec",
-                    "Chance": 0.3
+                    "item": "Crossvec",
+                    "chance": 0.3
                 }
             ]
         }
     },
     "Shotgun": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "COM-15",
-                    "Chance": 0.5
+                    "item": "COM-15",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "12/7 Buckshot Ammo",
-                    "Count": 2,
-                    "Chance": 0.5
+                    "item": "12/7 Buckshot Ammo",
+                    "count": 2,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "AK",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "Logicer",
             "Very Fine": [
                 {
-                    "Item": "Micro H.I.D.",
-                    "Chance": 0.05
+                    "item": "Micro H.I.D.",
+                    "chance": 0.05
                 },
                 {
-                    "Item": "Logicer",
-                    "Chance": 0.25
+                    "item": "Logicer",
+                    "chance": 0.25
                 },
                 {
-                    "Item": "AK",
-                    "Chance": 0.4
+                    "item": "AK",
+                    "chance": 0.4
                 },
                 {
-                    "Item": "Crossvec",
-                    "Chance": 0.3
+                    "item": "Crossvec",
+                    "chance": 0.3
                 }
             ]
         }
     },
     "SCP-2176": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Immediately Shatters"
+                "action": "Shatters"
             },
             "Coarse": "Flashbang Grenade",
             "1:1": {
-                "Item": "Coin",
-                "Count": 12
+                "item": "Coin",
+                "count": 12
             },
             "Fine": "COM-18",
             "Very Fine": [
                 {
-                    "Item": "Flashlight",
-                    "Chance": 0.8
+                    "item": "Flashlight",
+                    "chance": 0.8
                 },
                 "MTF-E11-SR"
             ]
         }
     },
     "SCP-244-A": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "Coin",
             "1:1": "SCP-244-B",
@@ -1108,9 +1123,9 @@
         }
     },
     "SCP-244-B": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": "Coin",
             "1:1": "SCP-244-A",
@@ -1119,80 +1134,78 @@
         }
     },
     "SCP-1853": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Painkillers",
             "Coarse": "Adrenaline",
             "1:1": "SCP-1853",
             "Fine": "SCP-207",
             "Very Fine": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "SCP-500",
-                    "Chance": 0.5
+                    "item": "SCP-500",
+                    "chance": 0.5
                 }
             ]
         }
     },
     "3-X Particle Disruptor": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Flashlight",
             "Coarse": "MTF-E11-SR",
             "1:1": "Jailbird",
             "Fine": {
-                "Action": "Refills Ammo"
+                "action": "Reloads"
             },
-            "Very Fine": {
-                "Item": "Micro H.I.D."
-            }
+            "Very Fine": "Micro H.I.D."
         }
     },
     "COM-45": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "chance": 0.5
                 }
             ],
             "Coarse": [
                 {
-                    "Item": "COM-15",
-                    "Chance": 0.5
+                    "item": "COM-15",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "9x19mm Ammo",
-                    "Chance": 0.5
+                    "item": "9x19mm Ammo",
+                    "chance": 0.5
                 }
             ],
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "Crossvec",
             "Very Fine": ".44 Revolver"
         }
     },
     "SCP-1576": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Radio",
             "Coarse": "SCP-2176",
             "1:1": "SCP-1576",
             "Fine": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Very Fine": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             }
         }
     },
     "Jailbird": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Flashlight",
             "Coarse": "Jailbird",
             "1:1": "3-X Particle Disruptor",
@@ -1201,65 +1214,65 @@
         }
     },
     "SCP-207?": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": "Painkillers",
             "Coarse": "Adrenaline",
             "1:1": "SCP-207",
             "Fine": "SCP-1853",
             "Very Fine": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             }
         }
     },
     "FR-MG-0": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "MTF-E11-SR",
-                    "Chance": 0.5
+                    "item": "MTF-E11-SR",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "5.56x45mm Ammo",
-                    "Count": 4,
-                    "Chance": 0.5
+                    "item": "5.56x45mm Ammo",
+                    "count": 4,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "MTF-E11-SR",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "Logicer",
             "Very Fine": [
                 {
-                    "Item": "Micro H.I.D.",
-                    "Chance": 0.05
+                    "item": "Micro H.I.D.",
+                    "chance": 0.05
                 },
                 {
-                    "Outputs": [
+                    "outputs": [
                         "Crossvec",
                         "COM-18"
                     ],
-                    "Chance": 0.95
+                    "chance": 0.95
                 }
             ]
         }
     },
     "A7": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": [
                 {
-                    "Item": "COM-15",
-                    "Chance": 0.5
+                    "item": "COM-15",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "7.62x39mm Ammo",
-                    "Count": 3,
-                    "Chance": 0.5
+                    "item": "7.62x39mm Ammo",
+                    "count": 3,
+                    "chance": 0.5
                 }
             ],
             "Coarse": "COM-18",
             "1:1": {
-                "Action": "Randomizes Attachments"
+                "action": "Randomizes attachments"
             },
             "Fine": "AK",
             "Very Fine": [
@@ -1269,30 +1282,30 @@
         }
     },
     "Lantern": {
-        "scp914Recipes": {
+        "scp914Outputs": {
             "Rough": {
-                "Action": "Destroys the Item"
+                "action": "Destroys the item"
             },
             "Coarse": [
                 {
-                    "Action": "Destroys the Item",
-                    "Chance": 0.5
+                    "action": "Destroys the item",
+                    "chance": 0.5
                 },
                 {
-                    "Item": "Lantern",
-                    "Chance": 0.5
+                    "item": "Lantern",
+                    "chance": 0.5
                 }
             ],
             "1:1": "Flashlight",
             "Fine": "Radio",
             "Very Fine": [
                 {
-                    "Item": "Flashbang Grenade",
-                    "Chance": 0.9
+                    "item": "Flashbang Grenade",
+                    "chance": 0.9
                 },
                 {
-                    "Item": "SCP-2176",
-                    "Chance": 0.1
+                    "item": "SCP-2176",
+                    "chance": 0.1
                 }
             ]
         }

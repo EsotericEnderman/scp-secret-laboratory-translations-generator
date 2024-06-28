@@ -1,26 +1,29 @@
-import scp914RecipesData from "../../data/scp-914-recipes.json" with { type: "json" };
 import { translationFilesNewLineCharacter } from "../constants.js";
-import { SCP914MultipleRecipeOutputList, SCP914RecipeOutput, SCP914Recipes, isSCP914ActionRecipeOutput, isSCP914ChanceRecipeOutput, isSCP914Item, isSCP914ItemCountRecipeOutput, isSCP914ItemRecipeOutput } from "../types.js";
+import { Item, ItemDataFile, MultipleSCP914Outputs, SCP914Output, SCP914Setting, isActionObject, isChanceObject, isCountObject, isItem, isItemObject } from "../types.js";
 import { getItemTranslation } from "./get-item-translation.js";
+import itemDataFile from "../../data/item-data.json" with { type: "json" };
+const typedItemDataFile = itemDataFile as ItemDataFile;
 
-export function recipeToString(itemName: string, languageFolderName: string) {
+export function recipeToString(itemName: Item, languageFolderName: string) {
     let output = "";
 
-    const recipes = scp914RecipesData as SCP914Recipes;
-
-    const recipe = recipes[itemName];
+    const recipe = typedItemDataFile[itemName]?.scp914Outputs;
 
     if (!recipe) {
+        console.log("Item '" + itemName + "' has no defined SCP-914 recipes.");
+
         return null;
     }
 
     for (const scp914Setting in recipe) {
+        const typedSetting = scp914Setting as SCP914Setting;
+
         let settingOutput = "";
 
-        const recipeOutput = recipe[scp914Setting];
+        const recipeOutput = recipe[typedSetting];
 
         if (recipeOutput === undefined) {
-            console.log(itemName);
+            console.log("No SCP-914 recipe output found for item '" + itemName + "' on setting '" + typedSetting + "'.");
         }
 
         if (Array.isArray(recipeOutput)) {
@@ -35,7 +38,7 @@ export function recipeToString(itemName: string, languageFolderName: string) {
     return "<size=3>" + output + "</size>";
 }
 
-function handleMultipleScp914Outputs(recipeOutput: SCP914MultipleRecipeOutputList, languageFolderName: string) {
+function handleMultipleScp914Outputs(recipeOutput: MultipleSCP914Outputs, languageFolderName: string) {
     let output = "";
 
     for (const element of recipeOutput) {
@@ -50,32 +53,32 @@ function handleMultipleScp914Outputs(recipeOutput: SCP914MultipleRecipeOutputLis
 
     output = output.slice(0, output.length - 2);
 
-    if (isSCP914ChanceRecipeOutput(recipeOutput)) {
-        output += " (" + Math.floor(recipeOutput.Chance * 100) + "%)";
+    if (isChanceObject(recipeOutput)) {
+        output += " (" + Math.floor(recipeOutput.chance * 100) + "%)";
     }
 
     return output;
 }
 
-function handleSingle914Output(recipeOutput: Exclude<SCP914RecipeOutput, SCP914MultipleRecipeOutputList>, languageFolderName: string) {
+function handleSingle914Output(recipeOutput: SCP914Output, languageFolderName: string) {
     let output = "";
 
-    if (isSCP914Item(recipeOutput)) {
+    if (isItem(recipeOutput)) {
         output = getItemTranslation(recipeOutput, languageFolderName);
-    } else if (isSCP914ItemRecipeOutput(recipeOutput)) {
-        if (isSCP914ItemCountRecipeOutput(recipeOutput)) {
-            output = recipeOutput.Count + "x ";
+    } else if (isItemObject(recipeOutput)) {
+        if (isCountObject(recipeOutput)) {
+            output = recipeOutput.count + "x ";
         }
 
-        output += getItemTranslation(recipeOutput.Item, languageFolderName);
-    } else if (isSCP914ActionRecipeOutput(recipeOutput)) {
-        output = recipeOutput.Action;
+        output += getItemTranslation(recipeOutput.item, languageFolderName);
+    } else if (isActionObject(recipeOutput)) {
+        output = recipeOutput.action;
     } else {
-        output = handleMultipleScp914Outputs(recipeOutput.Outputs, languageFolderName);
+        output = handleMultipleScp914Outputs(recipeOutput.outputs, languageFolderName);
     }
 
-    if (isSCP914ChanceRecipeOutput(recipeOutput)) {
-        output += " (" + Math.floor(recipeOutput.Chance * 100) + "%)";
+    if (isChanceObject(recipeOutput)) {
+        output += " (" + Math.floor(recipeOutput.chance * 100) + "%)";
     }
 
     return output;

@@ -2,8 +2,9 @@ import { readFileSync } from "fs";
 import { itemsFilePath, newLineCharacter, splitCharacter, translationsFolderPath } from "../constants.js";
 import { getItemNameIdMap } from "./get-item-name-id-map.js";
 import { invertMap } from "./invert-map.js";
+import { Item } from "../types.js";
 
-export function getItemTranslation(itemName: string, languageFolderName: string) {
+export function getItemTranslation(itemName: Item, languageFolderName: string) {
     const itemsFile = readFileSync(translationsFolderPath + "/" + languageFolderName + itemsFilePath).toString();
 
     const map = getItemNameIdMap();

@@ -49,6 +49,8 @@ export const playerNameVariable = "[player_name]";
 export const cameraNameVariable = "[camera_name]";
 export const zoneVariable = "[zone]";
 export const zoomAmountVariable = "[amount]";
+export const summaryMinutesVariable = "[summary_round_minutes]";
+export const summarySecondsVariable = "[summary_round_seconds]";
 
 // What to rename the SCPs to
 
@@ -185,6 +187,12 @@ export const hotkeysFilePath = "/Hotkeys.txt";
 
 export const grenadeIndex = 7;
 
+export const summaryFilePath = "/Summary.txt";
+
+export const missionTimeIndex = 13;
+
+// SCP files
+
 export const scp049HUDFilePath = "/SCP049_HUD.txt";
 
 export const attackCooldownIndex = 7;
@@ -276,6 +284,7 @@ export const textToReplace: { [filePath: string]: [number, string][] } = {
     ],
     [inventoryGuiFilePath]: [[ammoCountIndex, `${indexedVariable(0)}${slash}${indexedVariable(1)}${space}${indexedVariable(2)}`], [totalIndex, indexedVariable(0)]],
     [subtitlesFilePath]: [[mtfEntryIndex, designationVariable + space + minusSign + space], [scpSubjectsMultipleRemainingIndex, countVariable], [scpSubjectsSingleRemainingIndex, (1).toString()], [scpIndex, scpVariable], [generatorsActivatedIndex, currentVariable + slash + maximumVariable], [lczDecontaminationIn15MinutesIndex, (15).toString()], [lczDecontaminationInTimeMinutesIndex, timeVariable], [lczDecontaminationIn1MinuteIndex, (1).toString()], [lczDecontaminationIn30SecondsIndex, (0.5).toString()], [detonationStartedIndex, timeVariable], [detonationResumedIndex, timeVariable]],
+    [summaryFilePath]: [[missionTimeIndex, summaryMinutesVariable + colon + summarySecondsVariable]],
     [scp3114HUDFilePath]: [
         [unrecognisablePileOfBonesIndex, playerNameVariable],
         [roleDisguiseIndex, roleVariable]

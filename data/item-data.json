@@ -456,7 +456,7 @@
     },
     "Micro H.I.D.": {
         "itemDescriptionTextSize": {
-            "en": 15
+            "en": 10
         },
         "scp914Outputs": {
             "Rough": "MTF-E11-SR",
@@ -889,7 +889,7 @@
     },
     "Painkillers": {
         "itemDescriptionTextSize": {
-            "en": 15
+            "en": 10
         },
         "scp914Outputs": {
             "Rough": {
@@ -1219,7 +1219,7 @@
     },
     "3-X Particle Disruptor": {
         "itemDescriptionTextSize": {
-            "en": 10
+            "en": 5
         },
         "scp914Outputs": {
             "Rough": "Flashlight",
@@ -1361,7 +1361,7 @@
     },
     "Lantern": {
         "itemDescriptionTextSize": {
-            "en": 15
+            "en": 10
         },
         "scp914Outputs": {
             "Rough": {

@@ -65,7 +65,6 @@ export const scp049_2 = "49-2";
 export const scp096 = "96";
 export const scp079 = "79";
 export const scp173 = "173";
-export const scp012 = "12";
 export const scp106 = "106";
 export const scp939 = "939";
 export const scp207 = "207";
@@ -158,7 +157,6 @@ export const scp173DeathIndex = 22;
 export const scp939DeathIndex = 23;
 export const scp049_2DeathIndex = 24;
 export const ammoTypeIndex = 25;
-export const scp012DeathIndex = 26;
 export const scp106RecontainmentIndex = 27;
 export const alternativeSCP106RecontainmentIndex = 28;
 export const scp244DeathIndex = 30;
@@ -289,7 +287,6 @@ export const textToReplace: { [filePath: string]: [number, string][] } = {
         [scp939DeathIndex, scp939],
         [scp049_2DeathIndex, scp049_2],
         [ammoTypeIndex, ammoTypeVariable],
-        [scp012DeathIndex, scp012],
         [scp106RecontainmentIndex, scp106],
         [alternativeSCP106RecontainmentIndex, scp106],
         [scp244DeathIndex, scp244],

@@ -143,7 +143,6 @@ export const recontainedIndex = 1;
 export const detonatedByAlphaWarheadIndex = 2;
 export const scp049DeathIndex = 3;
 export const unknownCauseOfDeathIndex = 4;
-export const severeElectricalBurnsIndex = 5;
 export const pocketDimensionDeathIndex = 11;
 export const poisonDeathIndex = 13;
 export const alternativePoisonDeathIndex = 14;
@@ -190,10 +189,6 @@ export const lczDecontaminationIn1MinuteIndex = 21;
 export const lczDecontaminationIn30SecondsIndex = 22;
 export const detonationStartedIndex = 24;
 export const detonationResumedIndex = 26;
-
-export const categoriesFilePath = "/Categories.txt";
-
-export const microHIDIndex = 7;
 
 export const hotkeysFilePath = "/Hotkeys.txt";
 
@@ -309,7 +304,6 @@ export const textToReplace: { [filePath: string]: [number, string][] } = {
 export const languageSpecificTextToReplace: { [filePath: string]: [number, string, number][] } = {
     [deathReasonsFilePath]: [
         [detonatedByAlphaWarheadIndex, legacyInterfacesFilePath, legacyInterfacesAlphaWarheadIndex],
-        [severeElectricalBurnsIndex, categoriesFilePath, microHIDIndex],
         [shrapnelIndex, hotkeysFilePath, grenadeIndex],
         [nearbyExplosionIndex, hotkeysFilePath, grenadeIndex]
     ]

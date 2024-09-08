@@ -22,7 +22,7 @@
     "procedures",
     "translations"
   ],
-  "author": "Slqmy",
+  "author": "Esoteric Slime",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.0",

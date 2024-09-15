@@ -1,5 +1,5 @@
 {
-  "name": "scp-secret-laboratory-translations",
+  "name": "scp-secret-laboratory-translations-generator",
   "version": "1.0.0",
   "description": "Better translations for SCP: Secret Laboratory.",
   "main": "distrib/scripts/generate-updated-translations.js",

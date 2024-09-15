@@ -22,7 +22,11 @@
     "procedures",
     "translations"
   ],
-  "author": "Esoteric Slime",
+  "author": {
+    "name": "Esoteric Enderman",
+    "url": "https://github.com/EsotericEnderman",
+    "email": "90862990+EsotericEnderman@users.noreply.github.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.0",

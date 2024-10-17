@@ -31,7 +31,8 @@
   "devDependencies": {
     "@types/node": "^20.14.0",
     "nexe": "^4.0.0-rc.6",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "windows-build-tools": "^5.2.2"
   },
   "type": "module"
 }

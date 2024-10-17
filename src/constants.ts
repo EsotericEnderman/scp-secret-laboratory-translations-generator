@@ -1,14 +1,12 @@
-import packageJson from "../package.json" with { type: "json" };
-
 // Miscellaneous constants
 
 export const inventoryGUIGunAttributeTextSize = {
     "en": 5
 };
 
-// Author
+// Authors
 
-export const author = packageJson.author.name;
+export const newAuthors = ["Esoteric Enderman"];
 
 // Commonly used characters
 

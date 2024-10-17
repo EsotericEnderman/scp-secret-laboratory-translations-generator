@@ -1,7 +1,7 @@
 {
   "name": "scp-secret-laboratory-translations-generator",
   "version": "1.0.0",
-  "description": "Code to generate better translations for SCP: Secret Laboratory.",
+  "description": "A piece of code to generate updated SCP:SL translations.",
   "main": "distrib/scripts/generate-updated-translations.js",
   "scripts": {
     "generate-updated-translations": "node distrib/scripts/generate-updated-translations.js",

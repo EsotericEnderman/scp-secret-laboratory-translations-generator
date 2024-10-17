@@ -27,7 +27,7 @@
     "url": "https://github.com/EsotericEnderman",
     "email": "90862990+EsotericEnderman@users.noreply.github.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.14.0",
     "typescript": "^5.4.5"

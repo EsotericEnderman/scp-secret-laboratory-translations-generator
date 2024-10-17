@@ -1,4 +1,4 @@
-import itemData from "../../data/item-data.json" with { type: "json" };
+import { itemData } from "../data/item-data.js";
 import { Item, ItemDataFile } from "../types";
 
 const typedItemData = itemData as ItemDataFile;

@@ -1,4 +1,4 @@
-{
+export const itemData = {
     "Janitor Keycard": {
         "scp914Outputs": {
             "Rough": {

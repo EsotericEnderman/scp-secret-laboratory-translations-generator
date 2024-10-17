@@ -9,8 +9,8 @@
     "build": "npm run installDependencies && npm run buildTypeScript",
     "buildExe": "npx nexe distrib --build",
     "buildFull": "npm run build && npm run buildExe",
-    "generateUpdatedTranslations": "node distrib/scripts/generate-updated-translations.js",
-    "clearWorkDirectory": "node distrib/scripts/clear-output.js"
+    "generateUpdatedTranslations": "npm run build && node distrib/scripts/generate-updated-translations.js",
+    "clearWorkDirectory": "npm run build && node distrib/scripts/clear-output.js"
   },
   "keywords": [
     "scp",

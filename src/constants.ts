@@ -1,6 +1,6 @@
 import packageJson from "../package.json" with { type: "json" };
 
-// Miscelaneous constants
+// Miscellaneous constants
 
 export const inventoryGUIGunAttributeTextSize = {
     "en": 5
@@ -205,7 +205,7 @@ export const scp049HUDFilePath = "/SCP049_HUD.txt";
 export const attackCooldownIndex = 7;
 export const reviveIndex = 21;
 export const holdKeyIndex = 22;
-export const denyFurtherRessurectionIndex = 9;
+export const denyFurtherResurrectionIndex = 9;
 
 export const scp3114HUDFilePath = "/SCP3114_HUD.txt";
 
@@ -252,7 +252,7 @@ export const textToRemove: { [filePath: string]: number[] } = {
     [disarmingFilePath]: [followOrdersIndex],
     [legacyInterfacesFilePath]: [legacyInterfacesGiveOrdersIndex, legacyInterfacesFollowOrdersIndex, legacyInterfacesSameRankIndex, legacyInterfacesYouDiedIndex, legacyInterfacesYouWereKilledByIndex, legacyInterfacesAsIndex],
     [version7FilePath]: [youDiedIndex],
-    [scp049HUDFilePath]: [attackCooldownIndex, reviveIndex, holdKeyIndex, denyFurtherRessurectionIndex],
+    [scp049HUDFilePath]: [attackCooldownIndex, reviveIndex, holdKeyIndex, denyFurtherResurrectionIndex],
     [scp3114HUDFilePath]: [nowDisguisedAsIndex, unableToAttackIndex, itemsHeldCantBeUsedIndex, pressKeyToCommunicateIndex, alreadyDisguisedIndex, disguiseIndex, strangulationCooldownIndex, removeDisguiseIndex],
     [scp1507FilePath]: [vocaliseIndex],
     [scp096HUDFilePath]: [enterRageIndex, exitRageIndex],

@@ -1,4 +1,4 @@
-import { objectIncludeValue as objectIncludesValue } from "./utility/object-includes-value.js";
+import { objectIncludesValue } from "./utility/object-includes-value.js";
 
 // Basic types
 

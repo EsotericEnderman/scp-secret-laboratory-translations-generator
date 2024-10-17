@@ -4,6 +4,11 @@
   "description": "A piece of code to generate updated SCP:SL translations.",
   "main": "distrib/scripts/generate-updated-translations.js",
   "scripts": {
+    "installDependencies": "npm i",
+    "buildTypeScript": "npx tsc",
+    "build": "npm run installDependencies && npm run buildTypeScript",
+    "buildExe": "npx nexe distrib --build",
+    "buildFull": "npm run build && npm run buildExe",
     "generateUpdatedTranslations": "node distrib/scripts/generate-updated-translations.js",
     "clearWorkDirectory": "node distrib/scripts/clear-output.js"
   },

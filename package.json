@@ -41,5 +41,5 @@
     "nexe": "^4.0.0-rc.6",
     "typescript": "^5.4.5"
   },
-  "type": "module"
+  "type": "commonjs"
 }

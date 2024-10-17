@@ -5,5 +5,5 @@
 ## Features
 
 - Shortens SCP names (E.g., "SCP-079" becomes "79")
-- Removes role descriptions
+- Removes role descriptions as they are obstructive
 - Adds SCP-914 recipes to item names

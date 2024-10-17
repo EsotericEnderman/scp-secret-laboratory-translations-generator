@@ -4,8 +4,8 @@
   "description": "A piece of code to generate updated SCP:SL translations.",
   "main": "distrib/scripts/generate-updated-translations.js",
   "scripts": {
-    "generate-updated-translations": "node distrib/scripts/generate-updated-translations.js",
-    "clear-work-directory": "node distrib/scripts/clear-output.js"
+    "generateUpdatedTranslations": "node distrib/scripts/generate-updated-translations.js",
+    "clearWorkDirectory": "node distrib/scripts/clear-output.js"
   },
   "keywords": [
     "scp",

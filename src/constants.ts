@@ -8,7 +8,7 @@ export const inventoryGUIGunAttributeTextSize = {
 
 // Author
 
-export const author = packageJson.author;
+export const author = packageJson.author.name;
 
 // Commonly used characters
 

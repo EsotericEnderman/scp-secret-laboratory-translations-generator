@@ -25,7 +25,10 @@
     "special",
     "containment",
     "procedures",
-    "translations"
+    "translations",
+    "generator",
+    "generation",
+    "generate"
   ],
   "author": {
     "name": "Esoteric Enderman",

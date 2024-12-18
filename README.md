@@ -1,5 +1,7 @@
 # SCP: Secret Laboratory Translations Generator
 
+[![Project Status: Maintained](./assets/images/badges/status.svg)](./)
+
 > A piece of code to generate updated SCP:SL [translations](https://www.youtube.com/watch?v=nXZpNtWNwfs).
 
 ## Features
